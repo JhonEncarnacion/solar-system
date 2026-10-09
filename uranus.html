@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Project | Uranus</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Wait for the diagram and buttons before attaching JavaScript. -->
+    <script src="javascript/uranus.js" defer></script>
+  </head>
+  <body class="uranus-page">
+    <header class="site-header">
+      <!-- Shared navigation links to all ten pages. -->
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html" aria-current="page">Uranus</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Uranus</h1>
+        <p>Taking a different angle on the whole planet thing.</p>
+      </section>
+
+      <section class="panel">
+        <h2>The Ice Giant in Blue</h2>
+        <!-- Add two square images and update paths or descriptions to match. -->
+        <div class="image-grid">
+          <figure>
+            <img src="images/uranus1.jpeg" alt="Uranus seen from space with its pale blue-green atmosphere">
+          </figure>
+          <figure>
+            <img src="images/uranus2.webp" alt="Uranus and its faint ring system seen through a telescope">
+          </figure>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Five Facts About Uranus</h2>
+        <ul class="facts-list">
+          <li>Uranus is the seventh planet from the Sun.</li>
+          <li>Uranus is classified as an ice giant.</li>
+          <li>Methane in its atmosphere helps give Uranus its blue-green appearance.</li>
+          <li>One orbit around the Sun takes about 84 Earth years.</li>
+          <li>Its rotational axis is tilted by about 98 degrees, making it appear to rotate on its side.</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>A Planet with a Different Angle</h2>
+        <p>
+          Change the tilt to see how unusual Uranus really is. The dashed line
+          marks an upright axis, perpendicular to the orbital plane. The solid
+          arrow shows the model's spin axis.
+        </p>
+        <div class="uranus-tilt-layout">
+          <!-- Decorative diagram; the angle and explanation provide its text equivalent. -->
+          <div class="uranus-tilt-stage" aria-hidden="true">
+            <div class="uranus-upright-reference"></div>
+            <div class="uranus-orbit-reference"></div>
+            <span class="uranus-orbit-label">Orbital plane</span>
+            <div id="uranus-tilting-model">
+              <div class="uranus-model-globe"></div>
+              <div class="uranus-model-equator"></div>
+              <div class="uranus-model-axis"></div>
+            </div>
+          </div>
+
+          <div class="uranus-tilt-controls">
+            <div class="uranus-angle-display" role="status" aria-atomic="true">
+              <p class="uranus-angle-label">AXIAL TILT</p>
+              <p id="uranus-angle">98°</p>
+              <p id="uranus-tilt-description">Uranus is tilted about 98°: slightly past a completely sideways position.</p>
+            </div>
+            <div class="uranus-tilt-buttons">
+              <button type="button" id="less-uranus-tilt" aria-label="Decrease tilt by 10 degrees">−10°</button>
+              <button type="button" id="more-uranus-tilt" aria-label="Increase tilt by 10 degrees">+10°</button>
+            </div>
+            <div class="uranus-tilt-buttons">
+              <button type="button" id="upright-uranus">Stand Upright</button>
+              <button type="button" id="actual-uranus">Uranus Tilt</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
