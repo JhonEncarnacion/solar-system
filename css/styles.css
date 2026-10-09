@@ -484,3 +484,122 @@ footer {
 .earth-page.night-mode button:focus-visible {
   outline-color: #ffffff;
 }
+
+/* Mercury theme: rocky grays with copper accents. */
+.mercury-page {
+  color: #f2eeeb;
+  background: linear-gradient(135deg, #191817, #39322e);
+}
+
+.mercury-page .site-header {
+  background-color: #191817;
+  border-bottom-color: #8c7463;
+}
+
+.mercury-page nav a {
+  color: #f2eeeb;
+}
+
+.mercury-page nav a:hover,
+.mercury-page nav a[aria-current="page"] {
+  color: #211a16;
+  background-color: #e5b38c;
+}
+
+.mercury-page h1 {
+  color: #f2eeeb;
+  text-shadow: 0 0 20px #756254;
+}
+
+.mercury-page h2 {
+  color: #edc5a5;
+}
+
+.mercury-page .panel {
+  background-color: #292522;
+  border-color: #8c7463;
+}
+
+.mercury-page figcaption {
+  color: #d4c5b9;
+}
+
+/* Preserve the complete photographs inside matching square frames. */
+.mercury-page .image-grid img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background-color: #191817;
+}
+
+.mercury-page button {
+  color: #211a16;
+  background-color: #e5b38c;
+}
+
+.mercury-page button:hover {
+  background-color: #f5d2b7;
+}
+
+/* Highlight keyboard focus on links, buttons, and radio inputs. */
+.mercury-page a:focus-visible,
+.mercury-page button:focus-visible,
+.mercury-page input:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
+
+/* Keep the quiz question and its answers grouped together. */
+.mercury-quiz fieldset {
+  min-width: 0;
+  margin: 0 0 20px;
+  padding: 20px;
+  border: 1px solid #8c7463;
+  border-radius: 8px;
+}
+
+.mercury-quiz legend {
+  padding: 0 8px;
+  font-weight: bold;
+}
+
+/* Clicking anywhere on a label selects its radio button. */
+.mercury-answer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 12px 0;
+  padding: 12px;
+  background-color: #191817;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.mercury-answer:hover {
+  background-color: #42372f;
+}
+
+.mercury-answer input {
+  margin: 0;
+  accent-color: #e5b38c;
+}
+
+.mercury-quiz-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+#mercury-feedback {
+  min-height: 3em;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+/* Feedback uses explanatory text as well as color. */
+#mercury-feedback.correct {
+  color: #afe5b7;
+}
+
+#mercury-feedback.incorrect {
+  color: #ffc2b5;
+}

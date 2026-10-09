@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solar System Project | Mercury</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Connect the quiz controls after the HTML has been parsed. -->
+    <script src="javascript/mercury.js" defer></script>
+  </head>
+
+  <body class="mercury-page">
+    <header class="site-header">
+      <!-- Shared navigation; aria-current identifies this page. -->
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html" aria-current="page">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Mercury</h1>
+        <p>Small planet. Fast years. Frequent birthdays.</p>
+      </section>
+
+      <section class="panel">
+        <h2>A Rocky World</h2>
+
+        <!-- Update the filenames and alt text to match your images. -->
+        <div class="image-grid">
+          <figure>
+            <img
+              src="images/mercury1.jpg"
+              alt="Mercury seen from space with its gray, cratered surface"
+            >
+            <figcaption>
+              Mercury is the smallest planet in our solar system.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="images/mercury2.jpg"
+              alt="Close-up of impact craters on Mercury's rocky surface"
+            >
+            <figcaption>
+              Impact craters cover much of Mercury's surface.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Five Facts About Mercury</h2>
+
+        <ul class="facts-list">
+          <li>Mercury is the closest planet to the Sun.</li>
+          <li>Mercury is the smallest planet in our solar system.</li>
+          <li>
+            Mercury completes an orbit around the Sun in about 88 Earth days.
+          </li>
+          <li>Mercury has no moons or rings.</li>
+          <li>
+            Despite being closest to the Sun, Mercury is not the hottest
+            planet. Venus is hotter.
+          </li>
+        </ul>
+      </section>
+
+      <section class="panel mercury-quiz">
+        <h2>A Quick Mercury Challenge</h2>
+
+        <!-- A fieldset groups the answers under one accessible question. -->
+        <form id="mercury-quiz-form">
+          <fieldset>
+            <legend>
+              About how long does Mercury take to orbit the Sun?
+            </legend>
+
+            <label class="mercury-answer">
+              <input
+                type="radio"
+                name="mercury-year"
+                value="24"
+                required
+              >
+              24 Earth days
+            </label>
+
+            <label class="mercury-answer">
+              <input
+                type="radio"
+                name="mercury-year"
+                value="88"
+                required
+              >
+              88 Earth days
+            </label>
+
+            <label class="mercury-answer">
+              <input
+                type="radio"
+                name="mercury-year"
+                value="365"
+                required
+              >
+              365 Earth days
+            </label>
+          </fieldset>
+
+          <div class="mercury-quiz-controls">
+            <button type="submit">Check Answer</button>
+            <button type="reset">Reset Quiz</button>
+          </div>
+
+          <!-- Announce feedback when JavaScript updates this paragraph. -->
+          <p id="mercury-feedback" role="status">
+            Select an answer, then click Check Answer.
+          </p>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
