@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Project | Mars</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Wait for the page elements before connecting the calculator. -->
+    <script src="javascript/mars.js" defer></script>
+  </head>
+  <body class="mars-page">
+    <header class="site-header">
+      <!-- Shared navigation; aria-current marks the page being viewed. -->
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html" aria-current="page">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Mars</h1>
+        <p>A whole planet running on rust and robots.</p>
+      </section>
+
+      <section class="panel">
+        <h2>Meet the Red Planet</h2>
+        <!-- Add two square images here; update filenames and alt text to match your choices. -->
+        <div class="image-grid">
+          <figure>
+            <img src="images/mars1.jpg" alt="Mars seen from space, showing its reddish surface">
+          </figure>
+          <figure>
+            <img src="images/mars2.webp" alt="Rocky terrain and reddish dust on the surface of Mars">
+          </figure>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Five Facts About Mars</h2>
+        <ul class="facts-list">
+          <li>Mars is the fourth planet from the Sun.</li>
+          <li>Iron minerals that oxidize, or rust, give Mars its reddish appearance.</li>
+          <li>Mars has two small moons, Phobos and Deimos.</li>
+          <li>A year on Mars lasts about 687 Earth days.</li>
+          <li>Mars has a thin atmosphere made mostly of carbon dioxide.</li>
+        </ul>
+      </section>
+
+      <section class="panel mars-calculator">
+        <h2>Your Weight on Mars</h2>
+        <p class="mars-calculator-intro">
+          Same person, different gravity. See what an Earth-calibrated scale
+          would show on Mars.
+        </p>
+
+        <div class="mars-calculator-layout">
+          <!-- The weight field gets more room than the shorter units menu. -->
+          <form id="mars-weight-form">
+            <div class="mars-weight-fields">
+              <div>
+                <label for="mars-earth-weight">Your weight on Earth</label>
+                <input type="number" id="mars-earth-weight" min="0.1" max="1000000"
+                  step="any" placeholder="150" required>
+              </div>
+              <div>
+                <label for="mars-weight-unit">Units</label>
+                <select id="mars-weight-unit">
+                  <option value="lb">lb</option>
+                  <option value="kg">kg</option>
+                </select>
+              </div>
+            </div>
+            <div class="mars-weight-controls">
+              <button type="submit">Calculate</button>
+              <button type="reset" class="mars-reset-button">Reset</button>
+            </div>
+          </form>
+
+          <!-- Announce the full updated result without moving keyboard focus. -->
+          <div id="mars-weight-result" role="status" aria-atomic="true">
+            <p class="mars-result-label">ON MARS</p>
+            <p id="mars-result-value">—</p>
+            <p id="mars-result-detail">Enter your Earth weight to get started.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
