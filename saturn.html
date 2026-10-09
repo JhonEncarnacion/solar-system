@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Project | Saturn</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Connect the ring controls after the HTML is parsed. -->
+    <script src="javascript/saturn.js" defer></script>
+  </head>
+  <body class="saturn-page">
+    <header class="site-header">
+      <!-- Shared navigation links to all ten pages. -->
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html" aria-current="page">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Saturn</h1>
+        <p>The solar system's most committed accessory enthusiast.</p>
+      </section>
+
+      <section class="panel">
+        <h2>The Ringed World</h2>
+        <!-- Add two square images; match these paths and descriptions to your choices. -->
+        <div class="image-grid">
+          <figure>
+            <img src="images/saturn1.jpg" alt="Saturn seen from space with its broad ring system">
+          </figure>
+          <figure>
+            <img src="images/saturn2.jpeg" alt="Close-up of Saturn's rings showing light and dark bands">
+          </figure>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Five Facts About Saturn</h2>
+        <ul class="facts-list">
+          <li>Saturn is the sixth planet from the Sun.</li>
+          <li>It is the second-largest planet in our solar system, after Jupiter.</li>
+          <li>Saturn's rings are made mostly of water ice, mixed with rocky material and dust.</li>
+          <li>Saturn's average density is lower than the density of water.</li>
+          <li>Titan is Saturn's largest moon and has a thick atmosphere.</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>Build Saturn's Rings</h2>
+        <p>
+          Saturn's famous rings are divided into several regions. Switch three
+          of its main rings on and off to compare their positions.
+        </p>
+        <div class="saturn-explorer-layout">
+          <!-- Decorative top-down diagram; controls describe each ring's position. -->
+          <div class="saturn-ring-model" aria-hidden="true">
+            <div id="saturn-ring-a" class="saturn-ring ring-a"></div>
+            <div id="saturn-ring-b" class="saturn-ring ring-b"></div>
+            <div id="saturn-ring-c" class="saturn-ring ring-c"></div>
+            <div class="saturn-model-planet"></div>
+          </div>
+
+          <div class="saturn-ring-controls">
+            <fieldset>
+              <legend>Choose the visible rings</legend>
+              <label class="saturn-ring-option">
+                <input type="checkbox" id="toggle-ring-c" checked>
+                <span><strong>C Ring</strong><small>Innermost of these three; relatively faint.</small></span>
+              </label>
+              <label class="saturn-ring-option">
+                <input type="checkbox" id="toggle-ring-b" checked>
+                <span><strong>B Ring</strong><small>The bright middle band in this model.</small></span>
+              </label>
+              <label class="saturn-ring-option">
+                <input type="checkbox" id="toggle-ring-a" checked>
+                <span><strong>A Ring</strong><small>Outside the B ring, across the Cassini Division.</small></span>
+              </label>
+            </fieldset>
+            <div class="saturn-ring-buttons">
+              <button type="button" id="show-saturn-rings">Show All</button>
+              <button type="button" id="hide-saturn-rings">Hide All</button>
+            </div>
+            <p id="saturn-ring-status" role="status">Showing 3 of 3 rings: C, B, A.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -1011,3 +1011,41 @@ footer {
 .jupiter-orbit-controls { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 24px; }
 #jupiter-orbit-status { font-weight: bold; }
 .jupiter-model-note { color: #d5c6b3; font-size: 0.9rem; }
+
+/* Saturn theme: pale gold accents with warm olive-brown backgrounds. */
+.saturn-page { color: #faf3df; background: linear-gradient(135deg, #252318, #49422a); }
+.saturn-page .site-header { background-color: #201e15; border-bottom-color: #9e9164; }
+.saturn-page nav a { color: #faf3df; }
+.saturn-page nav a:hover,
+.saturn-page nav a[aria-current="page"] { color: #252318; background-color: #e8d59a; }
+.saturn-page h1 { color: #f9e8b6; text-shadow: 0 0 24px #98824a; }
+.saturn-page h2 { color: #ead7a1; }
+.saturn-page .panel { background-color: #302d1f; border-color: #9e9164; }
+
+/* Keep square image frames without cropping the rings out of photographs. */
+.saturn-page .image-grid img { aspect-ratio: 1 / 1; object-fit: contain; background-color: #15150f; }
+.saturn-page button { color: #252318; background-color: #e8d59a; }
+.saturn-page button:hover { background-color: #fff0bf; }
+.saturn-page a:focus-visible,
+.saturn-page button:focus-visible,
+.saturn-page input:focus-visible { outline: 3px solid #ffffff; outline-offset: 4px; }
+
+/* The model and controls wrap into a single column on narrow screens. */
+.saturn-explorer-layout { display: flex; flex-wrap: wrap; align-items: center; gap: 28px; margin: 28px 0; }
+.saturn-ring-model { position: relative; flex: 1 1 280px; max-width: 380px; aspect-ratio: 1 / 1; margin: 0 auto; background-color: #15150f; border-radius: 50%; }
+.saturn-ring { position: absolute; border-radius: 50%; }
+.ring-a { inset: 3%; border: 16px solid #baac78; }
+.ring-b { inset: 15%; border: 22px solid #efdfa9; }
+.ring-c { inset: 29%; border: 10px solid #706a51; }
+.saturn-model-planet { position: absolute; inset: 40%; border-radius: 50%; background: linear-gradient(160deg, #f7e4ae, #af965a); box-shadow: inset -8px -4px 12px #00000050; }
+
+.saturn-ring-controls { flex: 1 1 280px; min-width: 0; }
+.saturn-ring-controls fieldset { min-width: 0; margin: 0; padding: 16px; border: 1px solid #9e9164; border-radius: 10px; }
+.saturn-ring-controls legend { padding: 0 8px; font-weight: bold; }
+.saturn-ring-option { display: flex; align-items: flex-start; gap: 12px; padding: 12px 0; cursor: pointer; }
+.saturn-ring-option input { width: 20px; height: 20px; margin: 3px 0 0; flex-shrink: 0; accent-color: #e8d59a; }
+.saturn-ring-option strong { display: block; color: #f9e8b6; }
+.saturn-ring-option small { display: block; color: #d9ceb0; }
+.saturn-ring-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+#saturn-ring-status { color: #faf3df; }
+.saturn-model-note { color: #d9ceb0; font-size: 0.9rem; }
