@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solar System Project | Earth</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Wait until the HTML is parsed before connecting the theme button. -->
+    <script src="javascript/earth.js" defer></script>
+  </head>
+
+  <body class="earth-page">
+    <header class="site-header">
+      <!-- Shared navigation; aria-current identifies the active page. -->
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="earth.html" aria-current="page">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Earth</h1>
+        <p>The only planet with Wi-Fi and bad decisions.</p>
+      </section>
+
+      <section class="panel">
+        <h2>Our Home from Above</h2>
+
+        <!-- Two content images with descriptions and captions. -->
+        <div class="image-grid">
+          <figure>
+            <img
+              src="images/earth1.webp"
+              alt="Earth seen from space, showing blue oceans and white clouds"
+            >
+            <figcaption>
+              Oceans cover about 71% of Earth's surface.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="images/earth2.jpg"
+              alt="View of Earth's continents and oceans from space"
+            >
+            <figcaption>
+              Earth's surface includes continents, islands, and vast oceans.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Five Facts About Earth</h2>
+
+        <ul class="facts-list">
+          <li>Earth is the third planet from the Sun.</li>
+          <li>About 71% of Earth's surface is covered by water.</li>
+          <li>Earth has one natural satellite: the Moon.</li>
+          <li>
+            Earth's atmosphere is made mostly of nitrogen and oxygen.
+          </li>
+          <li>
+            Earth takes approximately 365.25 days to orbit the Sun.
+          </li>
+        </ul>
+      </section>
+
+      <section class="panel earth-interaction">
+        <h2>From Day to Night</h2>
+
+        <p>
+          Earth's rotation brings different parts of its surface into
+          sunlight and darkness. Try switching this page between
+          daytime and nighttime colors.
+        </p>
+
+        <!-- The button keeps a fixed label; aria-pressed reports its state. -->
+        <button
+          type="button"
+          id="earth-theme-button"
+          aria-pressed="false"
+        >
+          Night Mode
+        </button>
+
+        <p id="earth-theme-status" role="status">
+          Day mode is active.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

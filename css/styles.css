@@ -371,3 +371,116 @@ footer {
   color: #c8ccd8;
   font-size: 0.9rem;
 }
+
+/* Earth daytime theme: ocean blues, green accents, and light panels. */
+.earth-page {
+  color: #153d49;
+  background: linear-gradient(135deg, #dff5ff, #e2f3df);
+}
+
+.earth-page .site-header {
+  background-color: #164d60;
+  border-bottom-color: #347a83;
+}
+
+.earth-page nav a {
+  color: #ffffff;
+}
+
+.earth-page nav a:hover,
+.earth-page nav a[aria-current="page"] {
+  color: #12382c;
+  background-color: #b9edbc;
+}
+
+.earth-page h1 {
+  color: #145b75;
+}
+
+.earth-page h2 {
+  color: #216344;
+}
+
+.earth-page .panel {
+  background-color: #f5fbff;
+  border-color: #83abae;
+}
+
+.earth-page figcaption {
+  color: #365766;
+}
+
+/* Square frames show the complete images without cropping. */
+.earth-page .image-grid img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background-color: #102733;
+}
+
+.earth-page button {
+  color: #ffffff;
+  background-color: #216344;
+}
+
+.earth-page button:hover {
+  background-color: #174b33;
+}
+
+/* Dark outlines are visible against the light daytime panels. */
+.earth-page button:focus-visible {
+  outline-color: #145b75;
+}
+
+.earth-page nav a:focus-visible {
+  outline-color: #ffffff;
+}
+
+.earth-interaction {
+  text-align: center;
+}
+
+#earth-theme-status {
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+/* JavaScript adds night-mode to the body to activate these overrides. */
+.earth-page.night-mode {
+  color: #e7f4ff;
+  background: linear-gradient(135deg, #071724, #102d34);
+}
+
+.earth-page.night-mode .site-header {
+  background-color: #071724;
+  border-bottom-color: #497888;
+}
+
+.earth-page.night-mode h1 {
+  color: #b7e3ff;
+}
+
+.earth-page.night-mode h2 {
+  color: #a9e7ba;
+}
+
+.earth-page.night-mode .panel {
+  background-color: #132f3c;
+  border-color: #497888;
+}
+
+.earth-page.night-mode figcaption {
+  color: #bfd4df;
+}
+
+.earth-page.night-mode button {
+  color: #12382c;
+  background-color: #b9edbc;
+}
+
+.earth-page.night-mode button:hover {
+  background-color: #d8f7da;
+}
+
+.earth-page.night-mode button:focus-visible {
+  outline-color: #ffffff;
+}
