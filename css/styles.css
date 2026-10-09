@@ -160,3 +160,15 @@ footer {
   text-align: center;
   color: #c5d0e8;
 }
+
+.home-page .image-grid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.home-page .image-grid figure:nth-child(2) img {
+  object-position: center bottom;
+}
