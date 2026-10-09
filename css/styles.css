@@ -1,3 +1,4 @@
+/* Shared defaults: include padding and borders in element widths. */
 * {
   box-sizing: border-box;
 }
@@ -8,11 +9,13 @@ body {
   line-height: 1.6;
 }
 
+/* Homepage palette; subject pages override the shared blue accents below. */
 .home-page {
   color: #edf3ff;
   background: linear-gradient(135deg, #080d20, #17264b);
 }
 
+/* Shared header and navigation layout. */
 .site-header {
   padding: 24px;
   text-align: center;
@@ -26,6 +29,7 @@ body {
   font-weight: bold;
 }
 
+/* Wrap navigation links onto additional rows on narrow screens. */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -40,18 +44,21 @@ nav a {
   border-radius: 6px;
 }
 
+/* Highlight both hovered links and the current page. */
 nav a:hover,
 nav a[aria-current="page"] {
   color: #080d20;
   background-color: #a8d8ff;
 }
 
+/* Center the content and limit line lengths on wide screens. */
 main {
   width: 90%;
   max-width: 1000px;
   margin: 0 auto;
 }
 
+/* Shared title area and heading styles. */
 .hero {
   padding: 60px 0 36px;
   text-align: center;
@@ -79,6 +86,7 @@ h2 {
   margin-right: auto;
 }
 
+/* Reusable content containers; each page theme supplies its own colors. */
 .panel {
   margin-bottom: 28px;
   padding: 24px;
@@ -87,6 +95,7 @@ h2 {
   border-radius: 12px;
 }
 
+/* Images sit side by side when space allows and wrap on smaller screens. */
 .image-grid {
   display: flex;
   flex-wrap: wrap;
@@ -99,6 +108,7 @@ figure {
   margin: 0;
 }
 
+/* Scale images to their containers while preserving their natural proportions. */
 img {
   display: block;
   width: 100%;
@@ -120,6 +130,7 @@ figcaption {
   margin-bottom: 12px;
 }
 
+/* Homepage punchline styling; JavaScript controls its hidden attribute. */
 #joke-answer {
   padding: 16px;
   color: #b9ddff;
@@ -130,6 +141,7 @@ figcaption {
   font-weight: bold;
 }
 
+/* Shared button appearance and hover feedback. */
 button {
   padding: 12px 20px;
   color: #080d20;
@@ -145,6 +157,7 @@ button:hover {
   background-color: #d0eaff;
 }
 
+/* Keep keyboard focus visible on links and buttons. */
 a:focus-visible,
 button:focus-visible {
   outline: 3px solid #ffd166;
@@ -157,6 +170,7 @@ footer {
   color: #c5d0e8;
 }
 
+/* Matching wide frames; cover fills each frame by cropping excess image area. */
 .home-page .image-grid img {
   width: 100%;
   height: auto;
@@ -165,11 +179,13 @@ footer {
   border-radius: 8px;
 }
 
+/* Anchor the second image at the bottom so excess height is cropped from the top. */
 .home-page .image-grid figure:nth-child(2) img {
   object-position: center bottom;
 }
 
 
+/* Sun theme: warm backgrounds, gold accents, and a glowing title. */
 .sun-page {
   color: #fff1df;
   background: linear-gradient(135deg, #211008, #542508);
@@ -224,6 +240,7 @@ footer {
   outline-color: #fff1df;
 }
 
+/* Limit the modal to the viewport and allow scrolling on short screens. */
 #sun-joke-dialog {
   width: 90%;
   max-width: 480px;
@@ -237,6 +254,7 @@ footer {
   box-shadow: 0 0 35px #00000080;
 }
 
+/* Dim the rest of the page while the Sun dialog is open. */
 #sun-joke-dialog::backdrop {
   background-color: #000000b3;
 }

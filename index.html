@@ -7,11 +7,13 @@
     <title>Solar System Project | Home</title>
 
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- defer waits until the HTML is parsed before connecting the controls. -->
     <script src="javascript/home.js" defer></script>
   </head>
 
   <body class="home-page">
     <header class="site-header">
+      <!-- Shared navigation; aria-current identifies this page. -->
       <nav aria-label="Main navigation">
         <a href="index.html" aria-current="page">Home</a>
         <a href="sun.html">Sun</a>
@@ -27,6 +29,7 @@
     </header>
 
     <main>
+      <!-- Page title and short tagline. -->
       <section class="hero">
         <h1>Explore the Solar System</h1>
 
@@ -36,6 +39,7 @@
       </section>
 
       <section class="panel">
+        <!-- The homepage introduction has its own themed panel. -->
         <h2>Welcome to Our Cosmic Neighborhood</h2>
 
         <p>
@@ -54,6 +58,7 @@
       <section class="panel">
         <h2>Copyrighted Images</h2>
 
+        <!-- Each figure pairs an image with its caption; alt text describes the image. -->
         <div class="image-grid">
           <figure>
             <img
@@ -76,15 +81,19 @@
       <section class="panel">
         <h2>Five Facts About the Solar System</h2>
 
+        <!-- Keep the five facts visible independently of the interactive feature. -->
         <ul class="facts-list">
-          <li>Most planets are orbited by moons</li>
-          <li>Space is mostly empty</li>
-          <li>Oceans exist beyond Earth</li>
+          <li>Most planets are orbited by moons.</li>
+          <li>Space is mostly empty.</li>
+          <li>Oceans exist beyond Earth.</li>
           <li>
             Planets orbit the Sun in nearly the same plane but with slightly
-            different orbital tilts
+            different orbital tilts.
           </li>
-          <li>Massive cataclysmic collisions formed our modern solar system</li>
+          <li>
+            Collisions between objects helped shape the planets and moons of
+            our solar system.
+          </li>
         </ul>
       </section>
 
@@ -92,6 +101,7 @@
         <h2>Space Joke</h2>
         <h3>Why did the planets break up with the Sun?</h3>
 
+        <!-- Start with the answer hidden; home.js toggles it and aria-expanded. -->
         <p id="joke-answer" hidden>
           They needed some space—but they still kept coming around.
         </p>

@@ -50,6 +50,7 @@ const phases = [
   },
 ];
 
+// Cache the display elements that change when a phase is selected.
 const phaseSymbol = document.getElementById("phase-symbol");
 const phaseName = document.getElementById("phase-name");
 const phaseDescription = document.getElementById("phase-description");
@@ -58,6 +59,7 @@ const phaseCounter = document.getElementById("phase-counter");
 const previousButton = document.getElementById("previous-phase");
 const nextButton = document.getElementById("next-phase");
 
+// Array positions start at zero; the visitor sees phase numbers starting at one.
 let currentPhase = 0;
 
 // Update the symbol, name, explanation, and counter together.

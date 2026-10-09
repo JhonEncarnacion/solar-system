@@ -7,6 +7,7 @@
     <title>Solar System Project | Moon</title>
 
     <link rel="stylesheet" href="css/styles.css" />
+    <!-- defer waits until the HTML is parsed before connecting the controls. -->
     <script src="javascript/moon.js" defer></script>
   </head>
 
@@ -28,6 +29,7 @@
     </header>
 
     <main>
+      <!-- Page title and short tagline. -->
       <section class="hero">
         <h1>The Moon</h1>
         <p>Earth's closest companion—and the original night light.</p>
@@ -36,6 +38,7 @@
       <section class="panel">
         <h2>Copyrighted Images</h2>
 
+        <!-- Each figure pairs an image with its caption; alt text describes the image. -->
         <div class="image-grid">
           <figure>
             <img
@@ -53,7 +56,7 @@
               alt="Illustration of all the phases of the moon"
             />
             <figcaption>
-              There are eights phases of the moon.
+              The Moon's cycle includes eight phases.
             </figcaption>
           </figure>
         </div>
@@ -62,6 +65,7 @@
       <section class="panel">
         <h2>Five Facts About the Moon</h2>
 
+        <!-- Keep the five facts visible independently of the interactive feature. -->
         <ul class="facts-list">
           <li>The Moon is Earth's only natural satellite.</li>
           <li>
@@ -88,6 +92,7 @@
         </p>
 
         <!-- JavaScript updates the symbol, name, and explanation together. -->
+        <!-- Announce the updated phase to screen readers without moving keyboard focus. -->
         <div id="phase-display" aria-live="polite" aria-atomic="true">
           <span id="phase-symbol" aria-hidden="true">🌑</span>
 
