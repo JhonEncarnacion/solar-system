@@ -1,0 +1,162 @@
+/* Include padding and borders in element widths. */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+}
+
+/* Space theme for the homepage. */
+.home-page {
+  color: #edf3ff;
+  background: linear-gradient(135deg, #080d20, #17264b);
+}
+
+.site-header {
+  padding: 24px;
+  text-align: center;
+  background-color: #080d20;
+  border-bottom: 1px solid #40527b;
+}
+
+.site-name {
+  margin: 0 0 16px;
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Wrapping keeps all ten links accessible on smaller screens. */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+nav a {
+  padding: 8px 12px;
+  color: #edf3ff;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+nav a:hover,
+nav a[aria-current="page"] {
+  color: #080d20;
+  background-color: #a8d8ff;
+}
+
+main {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.hero {
+  padding: 60px 0 36px;
+  text-align: center;
+}
+
+.eyebrow {
+  color: #a8d8ff;
+  font-weight: bold;
+}
+
+h1 {
+  margin: 12px 0;
+  font-size: 2.6rem;
+  line-height: 1.2;
+}
+
+h2 {
+  margin-top: 0;
+  color: #b9ddff;
+}
+
+.hero p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.panel {
+  margin-bottom: 28px;
+  padding: 24px;
+  background-color: #111c36;
+  border: 1px solid #40527b;
+  border-radius: 12px;
+}
+
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+figure {
+  flex: 1 1 260px;
+  min-width: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+figcaption {
+  margin-top: 10px;
+  color: #c5d0e8;
+  font-size: 0.95rem;
+}
+
+.facts-list {
+  padding-left: 24px;
+}
+
+.facts-list li {
+  margin-bottom: 12px;
+}
+
+#joke-answer {
+  padding: 16px;
+  color: #b9ddff;
+  background-color: #080d20;
+  border-left: 4px solid #a8d8ff;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+button {
+  padding: 12px 20px;
+  color: #080d20;
+  background-color: #a8d8ff;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  font: inherit;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #d0eaff;
+}
+
+/* A visible outline helps people navigating with a keyboard. */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid #ffd166;
+  outline-offset: 4px;
+}
+
+footer {
+  padding: 24px;
+  text-align: center;
+  color: #c5d0e8;
+}

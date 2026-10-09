@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Solar System Project</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="javascript/home.js" defer></script>
+  </head>
+
+  <body class="home-page">
+    <header class="site-header">
+      <nav aria-label="Main navigation">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Explore the Solar System</h1>
+
+        <p>
+          Not gonna lie, the solar system is overrated... I'd rate it one star.
+        </p>
+      </section>
+
+      <section class="panel">
+        <h2>Our Solar System</h2>
+
+        <div class="image-grid">
+          <figure>
+            <img
+              src="images/solar-system.jpg"
+              alt="Illustration of the Sun and the eight planets of the solar system"
+            />
+            <figcaption>Our solar system has eight planets.</figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="images/sun.jpg"
+              alt="The Sun glowing against the darkness of space"
+            />
+            <figcaption>
+              The Sun is the star at the center of our solar system.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Five Facts You Should Know!</h2>
+
+        <ul class="facts-list">
+          <li>The Sun dominates almost all mass</li>
+          <li>Space is mostly empty</li>
+          <li>Oceans exist beyond Earth</li>
+          <li>Planets orbit on a shared flat plane</li>
+          <li>Massive cataclysmic collisions formed our modern solar system</li>
+        </ul>
+      </section>
+
+      <section class="panel">
+        <h2>Space Joke</h2>
+        <p>Why did the planets break up with the Sun?</p>
+
+        <p id="joke-answer" hidden>They needed some space—but they still kept coming around.</p>
+
+        <button
+          type="button"
+          id="joke-button"
+          aria-expanded="false"
+          aria-controls="joke-answer"
+        >
+          Reveal the Answer
+        </button>
+      </section>
+    </main>
+
+    <footer>
+      <p>Solar System Project</p>
+    </footer>
+  </body>
+</html>
