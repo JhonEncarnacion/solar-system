@@ -130,16 +130,6 @@ figcaption {
   margin-bottom: 12px;
 }
 
-/* Homepage punchline styling; JavaScript controls its hidden attribute. */
-#joke-answer {
-  padding: 16px;
-  color: #b9ddff;
-  background-color: #080d20;
-  border-left: 4px solid #a8d8ff;
-  border-radius: 6px;
-  font-size: 1.2rem;
-  font-weight: bold;
-}
 
 /* Shared button appearance and hover feedback. */
 button {
@@ -240,31 +230,8 @@ footer {
   outline-color: #fff1df;
 }
 
-/* Limit the modal to the viewport and allow scrolling on short screens. */
-#sun-joke-dialog {
-  width: 90%;
-  max-width: 480px;
-  max-height: 85vh;
-  overflow-y: auto;
-  padding: 28px;
-  color: #fff1df;
-  background-color: #32180d;
-  border: 2px solid #ffc078;
-  border-radius: 12px;
-  box-shadow: 0 0 35px #00000080;
-}
 
-/* Dim the rest of the page while the Sun dialog is open. */
-#sun-joke-dialog::backdrop {
-  background-color: #000000b3;
-}
 
-.sun-punchline {
-  margin: 24px 0;
-  color: #ffd19a;
-  font-size: 1.3rem;
-  font-weight: bold;
-}
 
 /* Moon page: charcoal backgrounds and silver accents. */
 .moon-page {
@@ -603,3 +570,232 @@ footer {
 #mercury-feedback.incorrect {
   color: #ffc2b5;
 }
+
+/* Venus theme: gold accents and warm cloud-inspired backgrounds. */
+.venus-page {
+  color: #fff4da;
+  background: linear-gradient(135deg, #30230d, #5c431b);
+}
+
+.venus-page .site-header {
+  background-color: #271e0e;
+  border-bottom-color: #a58b51;
+}
+
+.venus-page nav a {
+  color: #fff4da;
+}
+
+.venus-page nav a:hover,
+.venus-page nav a[aria-current="page"] {
+  color: #30230d;
+  background-color: #f3d58b;
+}
+
+.venus-page h1 {
+  color: #fff4da;
+  text-shadow: 0 0 24px #ad853d;
+}
+
+.venus-page h2 {
+  color: #f3d58b;
+}
+
+.venus-page .panel {
+  background-color: #392b14;
+  border-color: #a58b51;
+}
+
+.venus-page figcaption {
+  color: #e4d4b3;
+}
+
+/* Show the full images inside matching square frames. */
+.venus-page .image-grid img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background-color: #271e0e;
+}
+
+.venus-page button {
+  color: #30230d;
+  background-color: #f3d58b;
+}
+
+.venus-page button:hover {
+  background-color: #ffe9b3;
+}
+
+/* A visible outline supports navigation with a keyboard. */
+.venus-page a:focus-visible,
+.venus-page button:focus-visible,
+.venus-page input:focus-visible,
+.venus-page select:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
+
+/* Venus heat explorer: thermometer and controls wrap on narrow screens. */
+.venus-heat-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  margin: 28px 0;
+  padding: 24px;
+  background-color: #271e0e;
+  border-radius: 12px;
+}
+
+.venus-thermometer {
+  flex: 0 0 85px;
+  text-align: center;
+  color: #f3d58b;
+  font-weight: bold;
+}
+
+.heat-tube {
+  position: relative;
+  width: 48px;
+  height: 230px;
+  margin: 12px auto;
+  overflow: hidden;
+  border: 3px solid #f3d58b;
+  border-radius: 24px;
+  background-color: #392b14;
+}
+
+/* JavaScript adjusts the fill height and color to match the slider. */
+#heat-fill {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5.58%;
+  background-color: #f3b83d;
+}
+
+.venus-heat-controls {
+  flex: 1 1 240px;
+  min-width: 0;
+}
+
+/* Fahrenheit is prominent; Celsius appears beneath it as a reference. */
+#heat-reading {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffe4a3;
+}
+
+#heat-celsius {
+  margin: 0 0 20px;
+  font-size: 1.1rem;
+  color: #e4d4b3;
+}
+
+.venus-heat-controls label {
+  display: block;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+#heat-slider {
+  width: 100%;
+  margin: 0;
+  accent-color: #f3d58b;
+  cursor: pointer;
+}
+
+.heat-presets {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+#heat-explanation {
+  min-height: 4.8em;
+  color: #fff4da;
+}
+
+.venus-heat-note {
+  color: #e4d4b3;
+  font-size: 0.9rem;
+}
+
+.venus-heat-note a {
+  color: #f3d58b;
+}
+/* Homepage destination search: responsive cards preserve the hidden attribute. */
+.destination-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 12px 0 24px;
+}
+
+#destination-search {
+  flex: 1 1 220px;
+  min-width: 0;
+  padding: 12px;
+  font: inherit;
+  color: #edf3ff;
+  background-color: #080d20;
+  border: 1px solid #a8d8ff;
+  border-radius: 6px;
+}
+
+#destination-search::placeholder { color: #c5d0e8; }
+#destination-search:focus-visible { outline: 3px solid #ffd166; outline-offset: 4px; }
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 12px;
+  list-style: none;
+  padding: 0;
+}
+
+.destination-card {
+  padding: 16px;
+  background-color: #080d20;
+  border: 1px solid #40527b;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.destination-card a { color: #b9ddff; }
+.destination-card small { display: block; margin-top: 6px; color: #c5d0e8; font-weight: normal; }
+#destination-status { color: #c5d0e8; }
+
+/* Sun interior explorer: concentric rings are a simplified cross-section. */
+.sun-layer-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 28px;
+  margin: 28px 0;
+}
+
+.sun-cross-section {
+  position: relative;
+  flex: 0 1 260px;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin: 12px auto;
+}
+
+.sun-ring { position: absolute; border-radius: 50%; }
+.convection-ring { inset: 0; background-color: #b94b1b; }
+.radiation-ring { inset: 18%; background-color: #ed942e; }
+.core-ring { inset: 36%; background-color: #ffe09a; }
+.sun-ring.selected-layer { outline: 4px solid #ffffff; outline-offset: 4px; }
+
+.sun-layer-content { flex: 1 1 250px; min-width: 0; }
+.sun-layer-buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+.sun-page .sun-layer-buttons button[aria-pressed="true"] { background-color: #fff1df; border-color: #b95214; }
+.sun-layer-details { margin-top: 20px; padding: 20px; background-color: #211008; border-radius: 8px; }
+.sun-layer-details h3 { margin-top: 0; color: #ffd19a; }
+.sun-layer-note { color: #e9c7a7; font-size: 0.9rem; }
+.sun-layer-note a { color: #ffd19a; }

@@ -37,18 +37,15 @@
       </section>
 
       <section class="panel">
-        <h2>Copyrighted Images</h2>
+        <h2>Our Star Up Close</h2>
 
-        <!-- Each figure pairs an image with its caption; alt text describes the image. -->
+        <!-- Each figure contains a relevant image with descriptive alt text. -->
         <div class="image-grid">
           <figure>
             <img
               src="images/sun1.jpg"
               alt="The Sun glowing against the darkness of space"
             />
-            <figcaption>
-              The Sun is the star at the center of our solar system.
-            </figcaption>
           </figure>
 
           <figure>
@@ -56,9 +53,6 @@
               src="images/sun2.jpg"
               alt="Close-up view of the Sun showing bright solar activity"
             />
-            <figcaption>
-              The Sun is an active star with a constantly changing atmosphere.
-            </figcaption>
           </figure>
         </div>
       </section>
@@ -80,19 +74,28 @@
       </section>
 
       <section class="panel">
-        <h2>A Bright Sense of Humor</h2>
-
-        <button type="button" id="open-sun-joke">Display Joke</button>
+        <h2>Inside Our Star</h2>
+        <p>Select an interior layer to discover how energy travels through the Sun.</p>
+        <div class="sun-layer-layout">
+          <!-- Simplified cross-section; buttons and text describe the same layers. -->
+          <div id="sun-cross-section" class="sun-cross-section" aria-hidden="true">
+            <div class="sun-ring convection-ring" id="convection-ring"></div>
+            <div class="sun-ring radiation-ring" id="radiation-ring"></div>
+            <div class="sun-ring core-ring selected-layer" id="core-ring"></div>
+          </div>
+          <div class="sun-layer-content">
+            <div class="sun-layer-buttons" aria-label="Choose a solar interior layer">
+              <button type="button" id="select-core" aria-pressed="true">Core</button>
+              <button type="button" id="select-radiation" aria-pressed="false">Radiative Zone</button>
+              <button type="button" id="select-convection" aria-pressed="false">Convection Zone</button>
+            </div>
+            <div class="sun-layer-details" aria-live="polite" aria-atomic="true">
+              <h3 id="sun-layer-name">Core</h3>
+              <p id="sun-layer-description">Nuclear fusion joins hydrogen nuclei to form helium, releasing the energy that powers the Sun.</p>
+            </div>
+          </div>
+        </div>
       </section>
-
-      <!-- sun.js opens this modal; aria-labelledby gives it an accessible title. -->
-      <dialog id="sun-joke-dialog" aria-labelledby="sun-joke-title">
-        <h2 id="sun-joke-title">Why did the Sun skip college?</h2>
-
-        <p class="sun-punchline">Because it already had a million degrees!</p>
-
-        <button type="button" id="close-sun-joke" autofocus>Close</button>
-      </dialog>
     </main>
   </body>
 </html>
