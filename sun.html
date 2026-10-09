@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Solar System Project | Sun</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="javascript/sun.js" defer></script>
+</head>
+
+<body class="sun-page">
+  <header class="site-header">
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="sun.html" aria-current="page">Sun</a>
+      <a href="moon.html">Moon</a>
+      <a href="earth.html">Earth</a>
+      <a href="mercury.html">Mercury</a>
+      <a href="venus.html">Venus</a>
+      <a href="mars.html">Mars</a>
+      <a href="jupiter.html">Jupiter</a>
+      <a href="saturn.html">Saturn</a>
+      <a href="uranus.html">Uranus</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>The Sun</h1>
+
+      <p>
+        How long can you stare at it without sunglasses on?
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Copyrighted Images</h2>
+
+      <div class="image-grid">
+        <figure>
+          <img
+            src="images/sun1.jpg"
+            alt="The Sun glowing against the darkness of space"
+          >
+          <figcaption>
+            The Sun is the star at the center of our solar system.
+          </figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/sun2.jpg"
+            alt="Close-up view of the Sun showing bright solar activity"
+          >
+          <figcaption>
+            The Sun is an active star with a constantly changing atmosphere.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Five Facts About the Sun</h2>
+
+      <ul class="facts-list">
+        <li>
+          The Sun is a star made mostly of hydrogen and helium.
+        </li>
+        <li>
+          Its diameter is approximately 1.4 million kilometers.
+        </li>
+        <li>
+          The Sun contains about 99.8% of the solar system's mass.
+        </li>
+        <li>
+          Sunlight takes about eight minutes to reach Earth.
+        </li>
+        <li>
+          Nuclear fusion in the Sun's core converts hydrogen into helium
+          and releases energy.
+        </li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>A Bright Sense of Humor</h2>
+
+      <button type="button" id="open-sun-joke">
+        Display Joke
+      </button>
+    </section>
+
+    <dialog id="sun-joke-dialog" aria-labelledby="sun-joke-title">
+      <h2 id="sun-joke-title">Why did the Sun skip college?</h2>
+
+      <p class="sun-punchline">
+        Because it already had a million degrees!
+      </p>
+
+      <button type="button" id="close-sun-joke" autofocus>
+        Close
+      </button>
+    </dialog>
+  </main>
+</body>
+</html>

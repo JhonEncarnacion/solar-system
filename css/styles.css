@@ -1,4 +1,3 @@
-/* Include padding and borders in element widths. */
 * {
   box-sizing: border-box;
 }
@@ -9,7 +8,6 @@ body {
   line-height: 1.6;
 }
 
-/* Space theme for the homepage. */
 .home-page {
   color: #edf3ff;
   background: linear-gradient(135deg, #080d20, #17264b);
@@ -28,7 +26,6 @@ body {
   font-weight: bold;
 }
 
-/* Wrapping keeps all ten links accessible on smaller screens. */
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -148,7 +145,6 @@ button:hover {
   background-color: #d0eaff;
 }
 
-/* A visible outline helps people navigating with a keyboard. */
 a:focus-visible,
 button:focus-visible {
   outline: 3px solid #ffd166;
@@ -171,4 +167,83 @@ footer {
 
 .home-page .image-grid figure:nth-child(2) img {
   object-position: center bottom;
+}
+
+
+.sun-page {
+  color: #fff1df;
+  background: linear-gradient(135deg, #211008, #542508);
+}
+
+.sun-page .site-header {
+  background-color: #211008;
+  border-bottom-color: #a65d2a;
+}
+
+.sun-page nav a {
+  color: #fff1df;
+}
+
+.sun-page nav a:hover,
+.sun-page nav a[aria-current="page"] {
+  color: #211008;
+  background-color: #ffc078;
+}
+
+.sun-page .eyebrow,
+.sun-page h2 {
+  color: #ffd19a;
+}
+
+.sun-page h1 {
+  color: #fff1df;
+  text-shadow: 0 0 24px #b95214;
+}
+
+.sun-page .panel {
+  background-color: #32180d;
+  border-color: #a65d2a;
+}
+
+.sun-page figcaption,
+.sun-page footer {
+  color: #e9c7a7;
+}
+
+.sun-page button {
+  color: #211008;
+  background-color: #ffc078;
+}
+
+.sun-page button:hover {
+  background-color: #ffdcad;
+}
+
+.sun-page a:focus-visible,
+.sun-page button:focus-visible {
+  outline-color: #fff1df;
+}
+
+#sun-joke-dialog {
+  width: 90%;
+  max-width: 480px;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 28px;
+  color: #fff1df;
+  background-color: #32180d;
+  border: 2px solid #ffc078;
+  border-radius: 12px;
+  box-shadow: 0 0 35px #00000080;
+}
+
+#sun-joke-dialog::backdrop {
+  background-color: #000000b3;
+}
+
+.sun-punchline {
+  margin: 24px 0;
+  color: #ffd19a;
+  font-size: 1.3rem;
+  font-weight: bold;
 }
