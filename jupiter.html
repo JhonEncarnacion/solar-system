@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System Project | Jupiter</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Wait until the page is parsed before connecting animation controls. -->
+    <script src="javascript/jupiter.js" defer></script>
+  </head>
+  <body class="jupiter-page">
+    <header class="site-header">
+      <!-- Shared navigation links to all ten pages. -->
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html" aria-current="page">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>Jupiter</h1>
+        <p>Not a competition. Still the biggest.</p>
+      </section>
+
+      <section class="panel">
+        <h2>A Giant Up Close</h2>
+        <!-- Add your square images and adjust the descriptions to match. -->
+        <div class="image-grid">
+          <figure>
+            <img src="images/jupiter1.jpeg" alt="Jupiter seen from space with cream and brown cloud bands">
+          </figure>
+          <figure>
+            <img src="images/jupiter2.jpeg" alt="Close-up of Jupiter's Great Red Spot and surrounding clouds">
+          </figure>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Five Facts About Jupiter</h2>
+        <ul class="facts-list">
+          <li>Jupiter is the fifth planet from the Sun.</li>
+          <li>Jupiter is the largest planet in our solar system.</li>
+          <li>This gas giant is made mostly of hydrogen and helium.</li>
+          <li>The Great Red Spot is a huge, long-lasting storm in Jupiter's atmosphere.</li>
+          <li>Its four largest moons are Io, Europa, Ganymede, and Callisto.</li>
+        </ul>
+      </section>
+
+      <section class="panel jupiter-moons-section">
+        <h2>Moons in Motion</h2>
+        <p>
+          Jupiter has its own busy neighborhood. Start the model to watch its
+          four largest moons orbit, then pause to compare their positions.
+        </p>
+
+        <!-- The labels explain this decorative model to screen-reader users. -->
+        <div id="jupiter-orbit-model" aria-hidden="true">
+          <div class="jupiter-orbit callisto-orbit"><span class="orbit-moon"></span></div>
+          <div class="jupiter-orbit ganymede-orbit"><span class="orbit-moon"></span></div>
+          <div class="jupiter-orbit europa-orbit"><span class="orbit-moon"></span></div>
+          <div class="jupiter-orbit io-orbit"><span class="orbit-moon"></span></div>
+          <div class="jupiter-model-planet"></div>
+        </div>
+
+        <ul class="jupiter-moon-legend" aria-label="Moons from innermost to outermost orbit">
+          <li><span class="moon-key io-key" aria-hidden="true"></span>Io · innermost</li>
+          <li><span class="moon-key europa-key" aria-hidden="true"></span>Europa</li>
+          <li><span class="moon-key ganymede-key" aria-hidden="true"></span>Ganymede</li>
+          <li><span class="moon-key callisto-key" aria-hidden="true"></span>Callisto · outermost</li>
+        </ul>
+
+        <div class="jupiter-orbit-controls">
+          <button type="button" id="start-jupiter-orbits">Start Orbits</button>
+          <button type="button" id="pause-jupiter-orbits" disabled>Pause Orbits</button>
+        </div>
+        <p id="jupiter-orbit-status" role="status">Paused. Select Start Orbits to begin.</p>
+      </section>
+    </main>
+  </body>
+</html>
