@@ -247,3 +247,109 @@ footer {
   font-size: 1.3rem;
   font-weight: bold;
 }
+
+/* Moon page: charcoal backgrounds and silver accents. */
+.moon-page {
+  color: #f0f0f4;
+  background: linear-gradient(135deg, #101116, #30333e);
+}
+
+.moon-page .site-header {
+  background-color: #101116;
+  border-bottom-color: #626777;
+}
+
+.moon-page nav a {
+  color: #f0f0f4;
+}
+
+.moon-page nav a:hover,
+.moon-page nav a[aria-current="page"] {
+  color: #101116;
+  background-color: #d7dbe5;
+}
+
+.moon-page h1 {
+  text-shadow: 0 0 24px #9097aa;
+}
+
+.moon-page h2 {
+  color: #e0e3ed;
+}
+
+.moon-page .panel {
+  background-color: #20222b;
+  border-color: #626777;
+}
+
+.moon-page figcaption {
+  color: #c8ccd8;
+}
+
+/* Equal image frames preserve each photograph without cropping. */
+.moon-page .image-grid img {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background-color: #101116;
+}
+
+.moon-page button {
+  color: #101116;
+  background-color: #d7dbe5;
+}
+
+.moon-page button:hover {
+  background-color: #ffffff;
+}
+
+.moon-page a:focus-visible,
+.moon-page button:focus-visible {
+  outline-color: #ffffff;
+}
+
+/* Interactive moon-phase display. */
+.phase-explorer {
+  text-align: center;
+}
+
+#phase-display {
+  margin: 24px 0;
+  padding: 24px;
+  background-color: #101116;
+  border: 1px solid #626777;
+  border-radius: 12px;
+}
+
+#phase-symbol {
+  display: block;
+  font-size: 6rem;
+  line-height: 1.3;
+}
+
+#phase-name {
+  margin: 16px 0;
+  font-size: 1.5rem;
+}
+
+#phase-description {
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+#phase-counter {
+  color: #c8ccd8;
+  font-size: 0.9rem;
+}
+
+.phase-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+}
+
+.phase-note {
+  margin-bottom: 0;
+  color: #c8ccd8;
+  font-size: 0.9rem;
+}

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Solar System Project | Moon</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="javascript/moon.js" defer></script>
+  </head>
+
+  <body class="moon-page">
+    <header class="site-header">
+      <!-- Shared navigation links to all ten pages. -->
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="sun.html">Sun</a>
+        <a href="moon.html" aria-current="page">Moon</a>
+        <a href="earth.html">Earth</a>
+        <a href="mercury.html">Mercury</a>
+        <a href="venus.html">Venus</a>
+        <a href="mars.html">Mars</a>
+        <a href="jupiter.html">Jupiter</a>
+        <a href="saturn.html">Saturn</a>
+        <a href="uranus.html">Uranus</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <h1>The Moon</h1>
+        <p>Earth's closest companion—and the original night light.</p>
+      </section>
+
+      <section class="panel">
+        <h2>Copyrighted Images</h2>
+
+        <div class="image-grid">
+          <figure>
+            <img
+              src="images/moon1.jpg"
+              alt="Full Moon showing bright cratered regions and darker plains"
+            />
+            <figcaption>
+              The Moon's bright appearance comes from reflected sunlight.
+            </figcaption>
+          </figure>
+
+          <figure>
+            <img
+              src="images/moon2.png"
+              alt="Illustration of all the phases of the moon"
+            />
+            <figcaption>
+              There are eights phases of the moon.
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Five Facts About the Moon</h2>
+
+        <ul class="facts-list">
+          <li>The Moon is Earth's only natural satellite.</li>
+          <li>
+            The Moon reflects sunlight rather than producing its own light.
+          </li>
+          <li>The Moon's gravity helps produce ocean tides on Earth.</li>
+          <li>
+            The Moon rotates once per orbit around Earth, so we always see
+            approximately the same side.
+          </li>
+          <li>
+            In 1969, Apollo 11 became the first mission to land humans on the
+            Moon.
+          </li>
+        </ul>
+      </section>
+
+      <section class="panel phase-explorer">
+        <h2>Explore the Moon's Phases</h2>
+
+        <p>
+          As the Moon orbits Earth, we see different amounts of its sunlit half.
+          Use the buttons to explore all eight phases.
+        </p>
+
+        <!-- JavaScript updates the symbol, name, and explanation together. -->
+        <div id="phase-display" aria-live="polite" aria-atomic="true">
+          <span id="phase-symbol" aria-hidden="true">🌑</span>
+
+          <h3 id="phase-name">New Moon</h3>
+
+          <p id="phase-description">
+            The sunlit half faces away from Earth, so the Moon is usually not
+            visible.
+          </p>
+
+          <p id="phase-counter">Phase 1 of 8</p>
+        </div>
+
+        <div class="phase-controls">
+          <button type="button" id="previous-phase">Previous Phase</button>
+
+          <button type="button" id="next-phase">Next Phase</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
