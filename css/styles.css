@@ -108,11 +108,14 @@ figure {
   margin: 0;
 }
 
-/* Scale images to their containers while preserving their natural proportions. */
+/* All images use square frames; contain preserves the full picture without stretching. */
 img {
   display: block;
   width: 100%;
   height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  object-position: center;
   border-radius: 8px;
 }
 
@@ -160,19 +163,9 @@ footer {
   color: #c5d0e8;
 }
 
-/* Matching wide frames; cover fills each frame by cropping excess image area. */
-.home-page .image-grid img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-  border-radius: 8px;
-}
-
-/* Anchor the second image at the bottom so excess height is cropped from the top. */
-.home-page .image-grid figure:nth-child(2) img {
-  object-position: center bottom;
-}
+/* Page-specific backgrounds fill unused space around nonsquare source images. */
+.home-page .image-grid img { background-color: #080d20; }
+.sun-page .image-grid img { background-color: #211008; }
 
 
 /* Sun theme: warm backgrounds, gold accents, and a glowing title. */
@@ -273,8 +266,6 @@ footer {
 
 /* Equal image frames preserve each photograph without cropping. */
 .moon-page .image-grid img {
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
   background-color: #101116;
 }
 
@@ -379,8 +370,6 @@ footer {
 
 /* Square frames show the complete images without cropping. */
 .earth-page .image-grid img {
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
   background-color: #102733;
 }
 
@@ -493,8 +482,6 @@ footer {
 
 /* Preserve the complete photographs inside matching square frames. */
 .mercury-page .image-grid img {
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
   background-color: #191817;
 }
 
@@ -612,8 +599,6 @@ footer {
 
 /* Show the full images inside matching square frames. */
 .venus-page .image-grid img {
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
   background-color: #271e0e;
 }
 
@@ -825,8 +810,6 @@ footer {
 
 /* Square frames preserve the whole image; no visible captions are needed. */
 .mars-page .image-grid img {
-  aspect-ratio: 1 / 1;
-  object-fit: contain;
   background-color: #260f10;
 }
 
@@ -939,7 +922,7 @@ footer {
 .jupiter-page .panel { background-color: #302720; border-color: #947e66; }
 
 /* Square frames preserve both photographs without cropping. */
-.jupiter-page .image-grid img { aspect-ratio: 1 / 1; object-fit: contain; background-color: #151411; }
+.jupiter-page .image-grid img { background-color: #151411; }
 .jupiter-page button { color: #211c18; background-color: #dfc49e; }
 .jupiter-page button:hover { background-color: #f5e0c2; }
 .jupiter-page a:focus-visible,
@@ -1023,7 +1006,7 @@ footer {
 .saturn-page .panel { background-color: #302d1f; border-color: #9e9164; }
 
 /* Keep square image frames without cropping the rings out of photographs. */
-.saturn-page .image-grid img { aspect-ratio: 1 / 1; object-fit: contain; background-color: #15150f; }
+.saturn-page .image-grid img { background-color: #15150f; }
 .saturn-page button { color: #252318; background-color: #e8d59a; }
 .saturn-page button:hover { background-color: #fff0bf; }
 .saturn-page a:focus-visible,
@@ -1059,7 +1042,7 @@ footer {
 .uranus-page h1 { color: #d1f6ff; text-shadow: 0 0 24px #518a98; }
 .uranus-page h2 { color: #b6e8ee; }
 .uranus-page .panel { background-color: #183943; border-color: #6799a4; }
-.uranus-page .image-grid img { aspect-ratio: 1 / 1; object-fit: contain; background-color: #0b2128; }
+.uranus-page .image-grid img { background-color: #0b2128; }
 .uranus-page button { color: #102c35; background-color: #b6e8ee; }
 .uranus-page button:hover { background-color: #d9f9ff; }
 .uranus-page button:disabled { opacity: 0.5; cursor: default; }
@@ -1089,3 +1072,43 @@ footer {
 #uranus-tilt-description { margin-bottom: 0; }
 .uranus-tilt-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
 .uranus-model-note { color: #bddde3; font-size: 0.9rem; }
+
+/* Subject-page spacing: title-only headers, with the homepage excluded. */
+body:not(.home-page) .hero {
+  padding: 40px 0;
+  text-align: center;
+}
+
+/* Remove default heading margins so the title has equal space above and below. */
+body:not(.home-page) .hero h1 {
+  margin: 0;
+  font-size: clamp(2rem, 5vw, 2.6rem);
+  line-height: 1.2;
+}
+
+/* Keep section headings and the outer edges of all content panels aligned. */
+body:not(.home-page) main > .panel {
+  padding: 24px;
+  margin-bottom: 28px;
+}
+
+body:not(.home-page) main > .panel > h2 {
+  margin: 0 0 20px;
+}
+
+/* Avoid an extra bottom gap from the final paragraph, list, or form in a panel. */
+body:not(.home-page) main > .panel > :last-child {
+  margin-bottom: 0;
+}
+
+/* Slightly tighter spacing keeps title-only pages comfortable on phones. */
+@media (max-width: 600px) {
+  body:not(.home-page) .hero {
+    padding: 28px 0;
+  }
+
+  body:not(.home-page) main > .panel {
+    padding: 20px;
+    margin-bottom: 24px;
+  }
+}
