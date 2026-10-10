@@ -23,12 +23,6 @@ body {
   border-bottom: 1px solid #40527b;
 }
 
-.site-name {
-  margin: 0 0 16px;
-  font-size: 1.4rem;
-  font-weight: bold;
-}
-
 /* Wrap navigation links onto additional rows on narrow screens. */
 nav {
   display: flex;
@@ -62,11 +56,6 @@ main {
 .hero {
   padding: 60px 0 36px;
   text-align: center;
-}
-
-.eyebrow {
-  color: #a8d8ff;
-  font-weight: bold;
 }
 
 h1 {
@@ -133,7 +122,6 @@ figcaption {
   margin-bottom: 12px;
 }
 
-
 /* Shared button appearance and hover feedback. */
 button {
   padding: 12px 20px;
@@ -157,16 +145,9 @@ button:focus-visible {
   outline-offset: 4px;
 }
 
-footer {
-  padding: 24px;
-  text-align: center;
-  color: #c5d0e8;
-}
-
 /* Page-specific backgrounds fill unused space around nonsquare source images. */
 .home-page .image-grid img { background-color: #080d20; }
 .sun-page .image-grid img { background-color: #211008; }
-
 
 /* Sun theme: warm backgrounds, gold accents, and a glowing title. */
 .sun-page {
@@ -189,7 +170,6 @@ footer {
   background-color: #ffc078;
 }
 
-.sun-page .eyebrow,
 .sun-page h2 {
   color: #ffd19a;
 }
@@ -202,11 +182,6 @@ footer {
 .sun-page .panel {
   background-color: #32180d;
   border-color: #a65d2a;
-}
-
-.sun-page figcaption,
-.sun-page footer {
-  color: #e9c7a7;
 }
 
 .sun-page button {
@@ -222,9 +197,6 @@ footer {
 .sun-page button:focus-visible {
   outline-color: #fff1df;
 }
-
-
-
 
 /* Moon page: charcoal backgrounds and silver accents. */
 .moon-page {
@@ -258,10 +230,6 @@ footer {
 .moon-page .panel {
   background-color: #20222b;
   border-color: #626777;
-}
-
-.moon-page figcaption {
-  color: #c8ccd8;
 }
 
 /* Equal image frames preserve each photograph without cropping. */
@@ -324,12 +292,6 @@ footer {
   gap: 12px;
 }
 
-.phase-note {
-  margin-bottom: 0;
-  color: #c8ccd8;
-  font-size: 0.9rem;
-}
-
 /* Earth daytime theme: ocean blues, green accents, and light panels. */
 .earth-page {
   color: #153d49;
@@ -362,10 +324,6 @@ footer {
 .earth-page .panel {
   background-color: #f5fbff;
   border-color: #83abae;
-}
-
-.earth-page figcaption {
-  color: #365766;
 }
 
 /* Square frames show the complete images without cropping. */
@@ -424,10 +382,6 @@ footer {
   border-color: #497888;
 }
 
-.earth-page.night-mode figcaption {
-  color: #bfd4df;
-}
-
 .earth-page.night-mode button {
   color: #12382c;
   background-color: #b9edbc;
@@ -474,10 +428,6 @@ footer {
 .mercury-page .panel {
   background-color: #292522;
   border-color: #8c7463;
-}
-
-.mercury-page figcaption {
-  color: #d4c5b9;
 }
 
 /* Preserve the complete photographs inside matching square frames. */
@@ -593,10 +543,6 @@ footer {
   border-color: #a58b51;
 }
 
-.venus-page figcaption {
-  color: #e4d4b3;
-}
-
 /* Show the full images inside matching square frames. */
 .venus-page .image-grid img {
   background-color: #271e0e;
@@ -614,8 +560,7 @@ footer {
 /* A visible outline supports navigation with a keyboard. */
 .venus-page a:focus-visible,
 .venus-page button:focus-visible,
-.venus-page input:focus-visible,
-.venus-page select:focus-visible {
+.venus-page input:focus-visible {
   outline: 3px solid #ffffff;
   outline-offset: 4px;
 }
@@ -704,14 +649,6 @@ footer {
   color: #fff4da;
 }
 
-.venus-heat-note {
-  color: #e4d4b3;
-  font-size: 0.9rem;
-}
-
-.venus-heat-note a {
-  color: #f3d58b;
-}
 /* Homepage destination search: responsive cards preserve the hidden attribute. */
 .destination-controls {
   display: flex;
@@ -751,7 +688,6 @@ footer {
 }
 
 .destination-card a { color: #b9ddff; }
-.destination-card small { display: block; margin-top: 6px; color: #c5d0e8; font-weight: normal; }
 #destination-status { color: #c5d0e8; }
 
 /* Sun interior explorer: concentric rings are a simplified cross-section. */
@@ -782,8 +718,6 @@ footer {
 .sun-page .sun-layer-buttons button[aria-pressed="true"] { background-color: #fff1df; border-color: #b95214; }
 .sun-layer-details { margin-top: 20px; padding: 20px; background-color: #211008; border-radius: 8px; }
 .sun-layer-details h3 { margin-top: 0; color: #ffd19a; }
-.sun-layer-note { color: #e9c7a7; font-size: 0.9rem; }
-.sun-layer-note a { color: #ffd19a; }
 
 /* Mars theme: iron-red backgrounds with sandy accents. */
 .mars-page {
@@ -902,11 +836,6 @@ footer {
   .mars-weight-fields { grid-template-columns: minmax(0, 1fr); }
 }
 
-.mars-note,
-.mars-sources { color: #e5c4b6; font-size: 0.9rem; }
-.mars-sources { margin-bottom: 28px; }
-.mars-sources a { color: #ffc19b; }
-
 /* Jupiter theme: muted cloud bands, warm cream, and brown accents. */
 .jupiter-page {
   color: #f8efe3;
@@ -993,7 +922,6 @@ footer {
 .moon-key { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
 .jupiter-orbit-controls { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 24px; }
 #jupiter-orbit-status { font-weight: bold; }
-.jupiter-model-note { color: #d5c6b3; font-size: 0.9rem; }
 
 /* Saturn theme: pale gold accents with warm olive-brown backgrounds. */
 .saturn-page { color: #faf3df; background: linear-gradient(135deg, #252318, #49422a); }
@@ -1031,7 +959,6 @@ footer {
 .saturn-ring-option small { display: block; color: #d9ceb0; }
 .saturn-ring-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
 #saturn-ring-status { color: #faf3df; }
-.saturn-model-note { color: #d9ceb0; font-size: 0.9rem; }
 
 /* Uranus theme: deep teal backgrounds and icy blue accents. */
 .uranus-page { color: #e9fcff; background: linear-gradient(135deg, #102c35, #244953); }
@@ -1071,27 +998,19 @@ footer {
 #uranus-angle { margin: 8px 0; color: #d1f6ff; font-size: 2.8rem; font-weight: bold; line-height: 1.2; }
 #uranus-tilt-description { margin-bottom: 0; }
 .uranus-tilt-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
-.uranus-model-note { color: #bddde3; font-size: 0.9rem; }
 
 /* Subject-page spacing: title-only headers, with the homepage excluded. */
 body:not(.home-page) .hero {
   padding: 40px 0;
-  text-align: center;
 }
 
 /* Remove default heading margins so the title has equal space above and below. */
 body:not(.home-page) .hero h1 {
   margin: 0;
   font-size: clamp(2rem, 5vw, 2.6rem);
-  line-height: 1.2;
 }
 
-/* Keep section headings and the outer edges of all content panels aligned. */
-body:not(.home-page) main > .panel {
-  padding: 24px;
-  margin-bottom: 28px;
-}
-
+/* Keep section headings aligned across subject pages. */
 body:not(.home-page) main > .panel > h2 {
   margin: 0 0 20px;
 }
