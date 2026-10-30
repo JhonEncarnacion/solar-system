@@ -6,6 +6,7 @@ const mercuryFeedback = document.getElementById("mercury-feedback");
 mercuryForm.addEventListener("submit", function (event) {
   event.preventDefault();
 
+  // querySelector returns the first matching input inside this form.
   const selectedAnswer = mercuryForm.querySelector(
     'input[name="mercury-year"]:checked',
   );
@@ -16,17 +17,17 @@ mercuryForm.addEventListener("submit", function (event) {
     return;
   }
 
+  // Remove both previous feedback classes before assigning the new one.
   mercuryFeedback.classList.remove("correct", "incorrect");
 
+  // Input values are strings, so compare with "88" rather than the number 88.
   if (selectedAnswer.value === "88") {
     mercuryFeedback.textContent =
       "Correct! A year on Mercury lasts about 88 Earth days.";
-
     mercuryFeedback.classList.add("correct");
   } else {
     mercuryFeedback.textContent =
       "Not quite! Mercury completes an orbit in about 88 Earth days. Try again.";
-
     mercuryFeedback.classList.add("incorrect");
   }
 });
@@ -34,13 +35,11 @@ mercuryForm.addEventListener("submit", function (event) {
 // Remove previous feedback when the visitor changes their selection.
 mercuryForm.addEventListener("change", function () {
   mercuryFeedback.textContent = "Click Check Answer to check your selection.";
-
   mercuryFeedback.classList.remove("correct", "incorrect");
 });
 
 // The browser clears the selection; JavaScript resets the feedback.
 mercuryForm.addEventListener("reset", function () {
   mercuryFeedback.textContent = "Select an answer, then click Check Answer.";
-
   mercuryFeedback.classList.remove("correct", "incorrect");
 });

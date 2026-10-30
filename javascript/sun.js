@@ -1,4 +1,4 @@
-// Each entry connects a button, diagram ring, and explanation.
+// Each layer connects to a button, diagram ring, and explanation.
 const sunLayers = [
   {
     button: document.getElementById("select-core"),
@@ -22,7 +22,7 @@ const sunLayers = [
 const layerName = document.getElementById("sun-layer-name");
 const layerDescription = document.getElementById("sun-layer-description");
 
-// Keep one button pressed and one diagram ring highlighted at a time.
+// It updates every button/ring, then displays the chosen object's text.
 function selectLayer(selectedIndex) {
   sunLayers.forEach(function (layer, index) {
     const selected = index === selectedIndex;
@@ -38,4 +38,6 @@ sunLayers.forEach(function (layer, index) {
     selectLayer(index);
   });
 });
+
+// Core is the default layer
 selectLayer(0);

@@ -1,4 +1,4 @@
-// The eight moon phases in order.
+// Stores info of each phase of the moon
 const phases = [
   {
     name: "New Moon",

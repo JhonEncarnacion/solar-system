@@ -11,7 +11,7 @@ marsWeightForm.addEventListener("submit", function (event) {
   event.preventDefault();
   const earthReading = marsEarthWeight.valueAsNumber;
 
-  // Validate before calculating, in addition to the native HTML checks.
+  // Check if the Earth weight value is in range
   if (!Number.isFinite(earthReading) || earthReading < 0.1 || earthReading > 1000000) {
     marsResultValue.textContent = "—";
     marsResultDetail.textContent = "Enter a number between 0.1 and 1,000,000.";
@@ -28,6 +28,7 @@ function clearMarsResult() {
   marsResultValue.textContent = "—";
   marsResultDetail.textContent = "Select Calculate to see your result.";
 }
+
 marsEarthWeight.addEventListener("input", clearMarsResult);
 marsWeightUnit.addEventListener("change", clearMarsResult);
 

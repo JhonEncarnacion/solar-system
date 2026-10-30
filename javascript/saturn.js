@@ -9,6 +9,7 @@ const saturnRingStatus = document.getElementById("saturn-ring-status");
 // Update visibility and describe the selected rings in text.
 function updateSaturnRings() {
   const visibleRings = [];
+  //  Makes sure unchecked rings are hidden and checked ones are shown
   saturnRings.forEach(function (ring) {
     ring.diagram.hidden = !ring.checkbox.checked;
     if (ring.checkbox.checked) {
@@ -35,10 +36,13 @@ function setAllSaturnRings(visible) {
   });
   updateSaturnRings();
 }
+
 document.getElementById("show-saturn-rings").addEventListener("click", function () {
   setAllSaturnRings(true);
 });
 document.getElementById("hide-saturn-rings").addEventListener("click", function () {
   setAllSaturnRings(false);
 });
+
+// Initialize visibility and status from the starting checkbox values.
 updateSaturnRings();

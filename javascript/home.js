@@ -1,13 +1,16 @@
-// Search the guide using each card's name and descriptive keywords.
 const destinationSearch = document.getElementById("destination-search");
 const destinationCards = document.querySelectorAll(".destination-card");
 const destinationStatus = document.getElementById("destination-status");
 const clearDestinations = document.getElementById("clear-destinations");
 
+// filterDestinations reads the current search field, shows matching cards, 
+// and updates the count.
 function filterDestinations() {
   const query = destinationSearch.value.trim().toLowerCase();
   let visibleCount = 0;
 
+  // dataset.search reads its HTML data-search attribute. includes checks
+  // for the query anywhere in that string; an empty query matches every card.
   destinationCards.forEach(function (card) {
     const matches = card.dataset.search.includes(query);
     card.hidden = !matches;

@@ -8,6 +8,7 @@ const venusTemperature = 867; // Rounded average surface temperature in Fahrenhe
 
 // Keep the thermometer, readings, and accessible slider value synchronized.
 function updateHeat() {
+  // Slider values are strings. Number converts to a number for arithmetic.
   const fahrenheit = Number(heatSlider.value);
   const celsius = Math.round((fahrenheit - 32) * 5 / 9);
 
@@ -15,12 +16,18 @@ function updateHeat() {
   const fraction = (fahrenheit - Number(heatSlider.min)) /
     (Number(heatSlider.max) - Number(heatSlider.min));
   heatFill.style.height = (fraction * 100) + "%";
+  // HSL specifies hue, saturation, and lightness. As fraction rises from
+  // 0 to 1, hue falls from 45 toward 5, shifting the fill from yellow toward red.
   heatFill.style.backgroundColor = "hsl(" + (45 - fraction * 40) + ", 90%, 60%)";
   heatReading.textContent = fahrenheit + "°F";
   heatCelsius.textContent = celsius + "°C";
+  // aria-valuetext gives assistive technology a meaningful description of
+  // the slider reading in both units instead of only its raw number.
   heatSlider.setAttribute("aria-valuetext", fahrenheit + " degrees Fahrenheit, approximately " +
     celsius + " degrees Celsius");
 
+  // Check preset temperatures first to show their special explanations.
+  // For other values, subtraction reports how far below or above Venus it is.
   if (fahrenheit === 86) {
     heatExplanation.textContent = "86°F is an example of a warm day on Earth.";
   } else if (fahrenheit === 212) {
@@ -42,6 +49,8 @@ function selectTemperature(temperature) {
   heatSlider.value = temperature;
   updateHeat();
 }
+// These three click callbacks reuse selectTemperature with different
+// arguments: 86, 212, or the venusTemperature constant (867).
 document.getElementById("warm-day").addEventListener("click", function () {
   selectTemperature(86);
 });

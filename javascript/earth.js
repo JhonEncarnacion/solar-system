@@ -1,9 +1,9 @@
-// Find the button and the paragraph that reports the current theme.
 const themeButton = document.getElementById("earth-theme-button");
 const themeStatus = document.getElementById("earth-theme-status");
 
 // Add or remove the night-mode class each time the button is clicked.
 themeButton.addEventListener("click", function () {
+  // toggle adds night-mode if absent and removes it if present.
   const nightModeIsActive = document.body.classList.toggle("night-mode");
 
   // Keep the accessible button state and visible message synchronized.
