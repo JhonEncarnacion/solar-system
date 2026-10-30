@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Solar System Project | Home</title>
-
     <link rel="stylesheet" href="css/styles.css" />
     <!-- defer waits until the HTML is parsed before connecting the controls. -->
     <script src="javascript/home.js" defer></script>
@@ -63,7 +61,7 @@
           <figure>
             <img
               src="images/solar-system1.jpg"
-              alt="Illustration of the Sun and the eight planets of the solar system"
+              alt="Illustration of planets and their orbital paths around the Sun"
             />
             <figcaption>Our solar system has eight planets.</figcaption>
           </figure>
@@ -71,7 +69,7 @@
           <figure>
             <img
               src="images/solar-system2.webp"
-              alt="Illustration of planets and their orbital paths around the Sun"
+              alt="Artistic illustration of planets against a star-filled background"
             />
             <figcaption>All planets orbit around the Sun.</figcaption>
           </figure>
@@ -91,31 +89,67 @@
             different orbital tilts.
           </li>
           <li>
-            Collisions between objects helped shape the planets and moons of
-            our solar system.
+            Collisions between objects helped shape the planets and moons of our
+            solar system.
           </li>
         </ul>
       </section>
 
       <section class="panel">
         <h2>Find Your Next Destination</h2>
-        <p>Search by name or a keyword such as "rings", "craters", or "hottest".</p>
+        <p>
+          Search by name or a keyword such as "rings", "craters", or "hottest".
+        </p>
         <label for="destination-search">Search this solar system guide</label>
         <div class="destination-controls">
-          <input type="search" id="destination-search" placeholder="Try Venus or rings">
+          <input
+            type="search"
+            id="destination-search"
+            placeholder="Try Venus or rings"
+          />
           <button type="button" id="clear-destinations">Show All</button>
         </div>
         <!-- JavaScript filters the cards without changing the main navigation. -->
         <ul class="destination-grid">
-          <li class="destination-card" data-search="sun star light heat"><a href="sun.html">Sun</a></li>
-          <li class="destination-card" data-search="moon satellite phases craters"><a href="moon.html">Moon</a></li>
-          <li class="destination-card" data-search="earth planet oceans life"><a href="earth.html">Earth</a></li>
-          <li class="destination-card" data-search="mercury planet rocky smallest"><a href="mercury.html">Mercury</a></li>
-          <li class="destination-card" data-search="venus planet clouds hottest"><a href="venus.html">Venus</a></li>
-          <li class="destination-card" data-search="mars planet red rocky"><a href="mars.html">Mars</a></li>
-          <li class="destination-card" data-search="jupiter planet giant largest biggest"><a href="jupiter.html">Jupiter</a></li>
-          <li class="destination-card" data-search="saturn planet giant rings"><a href="saturn.html">Saturn</a></li>
-          <li class="destination-card" data-search="uranus planet ice giant"><a href="uranus.html">Uranus</a></li>
+          <li class="destination-card" data-search="sun star light heat">
+            <a href="sun.html">Sun</a>
+          </li>
+          <li
+            class="destination-card"
+            data-search="moon satellite phases craters"
+          >
+            <a href="moon.html">Moon</a>
+          </li>
+          <li class="destination-card" data-search="earth planet oceans life">
+            <a href="earth.html">Earth</a>
+          </li>
+          <li
+            class="destination-card"
+            data-search="mercury planet rocky smallest"
+          >
+            <a href="mercury.html">Mercury</a>
+          </li>
+          <li
+            class="destination-card"
+            data-search="venus planet clouds hottest"
+          >
+            <a href="venus.html">Venus</a>
+          </li>
+          <li class="destination-card" data-search="mars planet red rocky">
+            <a href="mars.html">Mars</a>
+          </li>
+          <li
+            class="destination-card"
+            data-search="jupiter planet giant largest biggest"
+          >
+            <a href="jupiter.html">Jupiter</a>
+          </li>
+          <li class="destination-card" data-search="saturn planet giant rings">
+            <a href="saturn.html">Saturn</a>
+          </li>
+          <li class="destination-card" data-search="uranus planet ice giant">
+            <a href="uranus.html">Uranus</a>
+          </li>
         </ul>
         <p id="destination-status" role="status">Showing all 9 destinations.</p>
       </section>

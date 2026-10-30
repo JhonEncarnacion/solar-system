@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solar System Project | Uranus</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- Wait for the diagram and buttons before attaching JavaScript. -->
     <script src="javascript/uranus.js" defer></script>
   </head>
+  
   <body class="uranus-page">
     <header class="site-header">
       <!-- Shared navigation links to all ten pages. -->
@@ -32,13 +33,18 @@
 
       <section class="panel">
         <h2>The Ice Giant in Blue</h2>
-        <!-- Add two square images and update paths or descriptions to match. -->
         <div class="image-grid">
           <figure>
-            <img src="images/uranus1.jpeg" alt="Uranus seen from space with its pale blue-green atmosphere">
+            <img
+              src="images/uranus1.jpeg"
+              alt="Uranus seen from space with its pale blue-green atmosphere"
+            />
           </figure>
           <figure>
-            <img src="images/uranus2.jpg" alt="Uranus and its ring system seen through a telescope">
+            <img
+              src="images/uranus2.jpg"
+              alt="Illustration of Uranus and its rings against a star-filled background"
+            />
           </figure>
         </div>
       </section>
@@ -48,9 +54,15 @@
         <ul class="facts-list">
           <li>Uranus is the seventh planet from the Sun.</li>
           <li>Uranus is classified as an ice giant.</li>
-          <li>Methane in its atmosphere helps give Uranus its blue-green appearance.</li>
+          <li>
+            Methane in its atmosphere helps give Uranus its blue-green
+            appearance.
+          </li>
           <li>One orbit around the Sun takes about 84 Earth years.</li>
-          <li>Its rotational axis is tilted by about 98 degrees, making it appear to rotate on its side.</li>
+          <li>
+            Its rotational axis is tilted by about 98 degrees, making it appear
+            to rotate on its side.
+          </li>
         </ul>
       </section>
 
@@ -78,11 +90,26 @@
             <div class="uranus-angle-display" role="status" aria-atomic="true">
               <p class="uranus-angle-label">AXIAL TILT</p>
               <p id="uranus-angle">98°</p>
-              <p id="uranus-tilt-description">Uranus is tilted about 98°: slightly past a completely sideways position.</p>
+              <p id="uranus-tilt-description">
+                Uranus is tilted about 98°: slightly past a completely sideways
+                position.
+              </p>
             </div>
             <div class="uranus-tilt-buttons">
-              <button type="button" id="less-uranus-tilt" aria-label="Decrease tilt by 10 degrees">−10°</button>
-              <button type="button" id="more-uranus-tilt" aria-label="Increase tilt by 10 degrees">+10°</button>
+              <button
+                type="button"
+                id="less-uranus-tilt"
+                aria-label="Decrease tilt by 10 degrees"
+              >
+                −10°
+              </button>
+              <button
+                type="button"
+                id="more-uranus-tilt"
+                aria-label="Increase tilt by 10 degrees"
+              >
+                +10°
+              </button>
             </div>
             <div class="uranus-tilt-buttons">
               <button type="button" id="upright-uranus">Stand Upright</button>

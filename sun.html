@@ -3,9 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Solar System Project | Sun</title>
-
     <link rel="stylesheet" href="css/styles.css" />
     <!-- defer waits until the HTML is parsed before connecting the controls. -->
     <script src="javascript/sun.js" defer></script>
@@ -73,23 +71,46 @@
 
       <section class="panel">
         <h2>Inside Our Star</h2>
-        <p>Select an interior layer to discover how energy travels through the Sun.</p>
+        <p>
+          Select an interior layer to discover how energy travels through the
+          Sun.
+        </p>
         <div class="sun-layer-layout">
           <!-- Simplified cross-section; buttons and text describe the same layers. -->
-          <div id="sun-cross-section" class="sun-cross-section" aria-hidden="true">
+          <div
+            id="sun-cross-section"
+            class="sun-cross-section"
+            aria-hidden="true"
+          >
             <div class="sun-ring convection-ring" id="convection-ring"></div>
             <div class="sun-ring radiation-ring" id="radiation-ring"></div>
             <div class="sun-ring core-ring selected-layer" id="core-ring"></div>
           </div>
           <div class="sun-layer-content">
-            <div class="sun-layer-buttons" aria-label="Choose a solar interior layer">
-              <button type="button" id="select-core" aria-pressed="true">Core</button>
-              <button type="button" id="select-radiation" aria-pressed="false">Radiative Zone</button>
-              <button type="button" id="select-convection" aria-pressed="false">Convection Zone</button>
+            <div
+              class="sun-layer-buttons"
+              aria-label="Choose a solar interior layer"
+            >
+              <button type="button" id="select-core" aria-pressed="true">
+                Core
+              </button>
+              <button type="button" id="select-radiation" aria-pressed="false">
+                Radiative Zone
+              </button>
+              <button type="button" id="select-convection" aria-pressed="false">
+                Convection Zone
+              </button>
             </div>
-            <div class="sun-layer-details" aria-live="polite" aria-atomic="true">
+            <div
+              class="sun-layer-details"
+              aria-live="polite"
+              aria-atomic="true"
+            >
               <h3 id="sun-layer-name">Core</h3>
-              <p id="sun-layer-description">Nuclear fusion joins hydrogen nuclei to form helium, releasing the energy that powers the Sun.</p>
+              <p id="sun-layer-description">
+                Nuclear fusion joins hydrogen nuclei to form helium, releasing
+                the energy that powers the Sun.
+              </p>
             </div>
           </div>
         </div>

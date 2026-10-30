@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solar System Project | Mars</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- Wait for the page elements before connecting the calculator. -->
     <script src="javascript/mars.js" defer></script>
   </head>
+  
   <body class="mars-page">
     <header class="site-header">
       <!-- Shared navigation; aria-current marks the page being viewed. -->
@@ -32,13 +33,18 @@
 
       <section class="panel">
         <h2>Meet the Red Planet</h2>
-        <!-- Add two square images here; update filenames and alt text to match your choices. -->
         <div class="image-grid">
           <figure>
-            <img src="images/mars1.jpg" alt="Mars seen from space, showing its reddish surface">
+            <img
+              src="images/mars1.jpg"
+              alt="Mars seen from space, showing its reddish surface"
+            />
           </figure>
           <figure>
-            <img src="images/mars2.jpg" alt="Rocky terrain and reddish dust on the surface of Mars">
+            <img
+              src="images/mars2.jpg"
+              alt="Mars seen from space, with reddish terrain and darker surface markings"
+            />
           </figure>
         </div>
       </section>
@@ -47,7 +53,10 @@
         <h2>Five Facts About Mars</h2>
         <ul class="facts-list">
           <li>Mars is the fourth planet from the Sun.</li>
-          <li>Iron minerals that oxidize, or rust, give Mars its reddish appearance.</li>
+          <li>
+            Iron minerals that oxidize, or rust, give Mars its reddish
+            appearance.
+          </li>
           <li>Mars has two small moons, Phobos and Deimos.</li>
           <li>A year on Mars lasts about 687 Earth days.</li>
           <li>Mars has a thin atmosphere made mostly of carbon dioxide.</li>
@@ -67,8 +76,15 @@
             <div class="mars-weight-fields">
               <div>
                 <label for="mars-earth-weight">Your weight on Earth</label>
-                <input type="number" id="mars-earth-weight" min="0.1" max="1000000"
-                  step="any" placeholder="150" required>
+                <input
+                  type="number"
+                  id="mars-earth-weight"
+                  min="0.1"
+                  max="1000000"
+                  step="any"
+                  placeholder="150"
+                  required
+                />
               </div>
               <div>
                 <label for="mars-weight-unit">Units</label>
@@ -88,7 +104,9 @@
           <div id="mars-weight-result" role="status" aria-atomic="true">
             <p class="mars-result-label">ON MARS</p>
             <p id="mars-result-value">—</p>
-            <p id="mars-result-detail">Enter your Earth weight to get started.</p>
+            <p id="mars-result-detail">
+              Enter your Earth weight to get started.
+            </p>
           </div>
         </div>
       </section>

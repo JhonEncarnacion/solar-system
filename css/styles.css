@@ -146,8 +146,12 @@ button:focus-visible {
 }
 
 /* Page-specific backgrounds fill unused space around nonsquare source images. */
-.home-page .image-grid img { background-color: #080d20; }
-.sun-page .image-grid img { background-color: #211008; }
+.home-page .image-grid img {
+  background-color: #080d20;
+}
+.sun-page .image-grid img {
+  background-color: #211008;
+}
 
 /* Sun theme: warm backgrounds, gold accents, and a glowing title. */
 .sun-page {
@@ -668,8 +672,13 @@ button:focus-visible {
   border-radius: 6px;
 }
 
-#destination-search::placeholder { color: #c5d0e8; }
-#destination-search:focus-visible { outline: 3px solid #ffd166; outline-offset: 4px; }
+#destination-search::placeholder {
+  color: #c5d0e8;
+}
+#destination-search:focus-visible {
+  outline: 3px solid #ffd166;
+  outline-offset: 4px;
+}
 
 .destination-grid {
   display: grid;
@@ -687,8 +696,12 @@ button:focus-visible {
   font-weight: bold;
 }
 
-.destination-card a { color: #b9ddff; }
-#destination-status { color: #c5d0e8; }
+.destination-card a {
+  color: #b9ddff;
+}
+#destination-status {
+  color: #c5d0e8;
+}
 
 /* Sun interior explorer: concentric rings are a simplified cross-section. */
 .sun-layer-layout {
@@ -707,17 +720,50 @@ button:focus-visible {
   margin: 12px auto;
 }
 
-.sun-ring { position: absolute; border-radius: 50%; }
-.convection-ring { inset: 0; background-color: #b94b1b; }
-.radiation-ring { inset: 18%; background-color: #ed942e; }
-.core-ring { inset: 36%; background-color: #ffe09a; }
-.sun-ring.selected-layer { outline: 4px solid #ffffff; outline-offset: 4px; }
+.sun-ring {
+  position: absolute;
+  border-radius: 50%;
+}
+.convection-ring {
+  inset: 0;
+  background-color: #b94b1b;
+}
+.radiation-ring {
+  inset: 18%;
+  background-color: #ed942e;
+}
+.core-ring {
+  inset: 36%;
+  background-color: #ffe09a;
+}
+.sun-ring.selected-layer {
+  outline: 4px solid #ffffff;
+  outline-offset: 4px;
+}
 
-.sun-layer-content { flex: 1 1 250px; min-width: 0; }
-.sun-layer-buttons { display: flex; flex-wrap: wrap; gap: 10px; }
-.sun-page .sun-layer-buttons button[aria-pressed="true"] { background-color: #fff1df; border-color: #b95214; }
-.sun-layer-details { margin-top: 20px; padding: 20px; background-color: #211008; border-radius: 8px; }
-.sun-layer-details h3 { margin-top: 0; color: #ffd19a; }
+.sun-layer-content {
+  flex: 1 1 250px;
+  min-width: 0;
+}
+.sun-layer-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.sun-page .sun-layer-buttons button[aria-pressed="true"] {
+  background-color: #fff1df;
+  border-color: #b95214;
+}
+.sun-layer-details {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #211008;
+  border-radius: 8px;
+}
+.sun-layer-details h3 {
+  margin-top: 0;
+  color: #ffd19a;
+}
 
 /* Mars theme: iron-red backgrounds with sandy accents. */
 .mars-page {
@@ -730,7 +776,9 @@ button:focus-visible {
   border-bottom-color: #a9634f;
 }
 
-.mars-page nav a { color: #fff0e6; }
+.mars-page nav a {
+  color: #fff0e6;
+}
 
 .mars-page nav a:hover,
 .mars-page nav a[aria-current="page"] {
@@ -738,17 +786,30 @@ button:focus-visible {
   background-color: #f4b18c;
 }
 
-.mars-page h1 { color: #ffd4bd; text-shadow: 0 0 24px #a2462f; }
-.mars-page h2 { color: #ffc19b; }
-.mars-page .panel { background-color: #381b19; border-color: #a9634f; }
+.mars-page h1 {
+  color: #ffd4bd;
+  text-shadow: 0 0 24px #a2462f;
+}
+.mars-page h2 {
+  color: #ffc19b;
+}
+.mars-page .panel {
+  background-color: #381b19;
+  border-color: #a9634f;
+}
 
 /* Square frames preserve the whole image; no visible captions are needed. */
 .mars-page .image-grid img {
   background-color: #260f10;
 }
 
-.mars-page button { color: #260f10; background-color: #f4b18c; }
-.mars-page button:hover { background-color: #ffd4bd; }
+.mars-page button {
+  color: #260f10;
+  background-color: #f4b18c;
+}
+.mars-page button:hover {
+  background-color: #ffd4bd;
+}
 
 .mars-page a:focus-visible,
 .mars-page button:focus-visible,
@@ -786,8 +847,14 @@ button:focus-visible {
   gap: 12px;
 }
 
-.mars-weight-fields > div { min-width: 0; }
-.mars-weight-fields label { display: block; margin-bottom: 8px; font-weight: bold; }
+.mars-weight-fields > div {
+  min-width: 0;
+}
+.mars-weight-fields label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
 
 .mars-weight-fields input,
 .mars-weight-fields select {
@@ -803,11 +870,25 @@ button:focus-visible {
   color-scheme: dark;
 }
 
-.mars-weight-fields input::placeholder { color: #bd9180; }
-.mars-weight-controls { display: flex; flex-wrap: wrap; gap: 12px; }
-.mars-weight-controls button { min-height: 48px; }
-.mars-page .mars-reset-button { color: #f4b18c; background-color: transparent; border-color: #a9634f; }
-.mars-page .mars-reset-button:hover { background-color: #54261e; }
+.mars-weight-fields input::placeholder {
+  color: #bd9180;
+}
+.mars-weight-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.mars-weight-controls button {
+  min-height: 48px;
+}
+.mars-page .mars-reset-button {
+  color: #f4b18c;
+  background-color: transparent;
+  border-color: #a9634f;
+}
+.mars-page .mars-reset-button:hover {
+  background-color: #54261e;
+}
 
 #mars-weight-result {
   display: flex;
@@ -822,44 +903,109 @@ button:focus-visible {
   border-radius: 12px;
 }
 
-.mars-result-label { margin: 0; color: #e5c4b6; font-size: 0.8rem; letter-spacing: 0.14em; font-weight: bold; }
-#mars-result-value { margin: 8px 0; color: #ffc19b; font-size: clamp(1.8rem, 4vw, 2.8rem); line-height: 1.2; font-weight: bold; overflow-wrap: anywhere; }
-#mars-result-detail { margin: 0; color: #e5c4b6; font-size: 0.9rem; }
+.mars-result-label {
+  margin: 0;
+  color: #e5c4b6;
+  font-size: 0.8rem;
+  letter-spacing: 0.14em;
+  font-weight: bold;
+}
+#mars-result-value {
+  margin: 8px 0;
+  color: #ffc19b;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  line-height: 1.2;
+  font-weight: bold;
+  overflow-wrap: anywhere;
+}
+#mars-result-detail {
+  margin: 0;
+  color: #e5c4b6;
+  font-size: 0.9rem;
+}
 
 /* Stack the result below the controls on narrower screens. */
 @media (max-width: 700px) {
-  .mars-calculator-layout { grid-template-columns: minmax(0, 1fr); gap: 20px; }
-  #mars-weight-result { min-height: 170px; }
+  .mars-calculator-layout {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 20px;
+  }
+  #mars-weight-result {
+    min-height: 170px;
+  }
 }
 
 @media (max-width: 380px) {
-  .mars-weight-fields { grid-template-columns: minmax(0, 1fr); }
+  .mars-weight-fields {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 /* Jupiter theme: muted cloud bands, warm cream, and brown accents. */
 .jupiter-page {
   color: #f8efe3;
-  background: repeating-linear-gradient(0deg, #302620 0px, #302620 80px, #392d25 80px, #392d25 140px);
+  background: repeating-linear-gradient(
+    0deg,
+    #302620 0px,
+    #302620 80px,
+    #392d25 80px,
+    #392d25 140px
+  );
 }
 
-.jupiter-page .site-header { background-color: #211c18; border-bottom-color: #947e66; }
-.jupiter-page nav a { color: #f8efe3; }
+.jupiter-page .site-header {
+  background-color: #211c18;
+  border-bottom-color: #947e66;
+}
+.jupiter-page nav a {
+  color: #f8efe3;
+}
 .jupiter-page nav a:hover,
-.jupiter-page nav a[aria-current="page"] { color: #211c18; background-color: #dfc49e; }
-.jupiter-page h1 { color: #f5e0c2; text-shadow: 0 0 22px #8b6449; }
-.jupiter-page h2 { color: #e8cfae; }
-.jupiter-page .panel { background-color: #302720; border-color: #947e66; }
+.jupiter-page nav a[aria-current="page"] {
+  color: #211c18;
+  background-color: #dfc49e;
+}
+.jupiter-page h1 {
+  color: #f5e0c2;
+  text-shadow: 0 0 22px #8b6449;
+}
+.jupiter-page h2 {
+  color: #e8cfae;
+}
+.jupiter-page .panel {
+  background-color: #302720;
+  border-color: #947e66;
+}
 
 /* Square frames preserve both photographs without cropping. */
-.jupiter-page .image-grid img { background-color: #151411; }
-.jupiter-page button { color: #211c18; background-color: #dfc49e; }
-.jupiter-page button:hover { background-color: #f5e0c2; }
+.jupiter-page .image-grid img {
+  background-color: #151411;
+}
+.jupiter-page button {
+  color: #211c18;
+  background-color: #dfc49e;
+}
+.jupiter-page button:hover {
+  background-color: #f5e0c2;
+}
 .jupiter-page a:focus-visible,
-.jupiter-page button:focus-visible { outline: 3px solid #ffffff; outline-offset: 4px; }
-.jupiter-page button:disabled { opacity: 0.5; cursor: default; }
+.jupiter-page button:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
+.jupiter-page button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
 
-.jupiter-moons-section { text-align: center; }
-.jupiter-moons-section > p { max-width: 700px; margin-left: auto; margin-right: auto; }
+.jupiter-moons-section {
+  text-align: center;
+}
+.jupiter-moons-section > p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* A responsive square contains four concentric orbital paths. */
 #jupiter-orbit-model {
@@ -876,7 +1022,15 @@ button:focus-visible {
   position: absolute;
   inset: 39%;
   border-radius: 50%;
-  background: repeating-linear-gradient(0deg, #d3a274 0%, #d3a274 12%, #f0dab6 12%, #f0dab6 23%, #a36b47 23%, #a36b47 31%);
+  background: repeating-linear-gradient(
+    0deg,
+    #d3a274 0%,
+    #d3a274 12%,
+    #f0dab6 12%,
+    #f0dab6 23%,
+    #a36b47 23%,
+    #a36b47 31%
+  );
   box-shadow: inset -12px -4px 16px #00000060;
 }
 
@@ -890,10 +1044,26 @@ button:focus-visible {
   pointer-events: none;
 }
 
-.io-orbit { inset: 32%; animation-duration: 8s; animation-delay: -1s; }
-.europa-orbit { inset: 22%; animation-duration: 12s; animation-delay: -5s; }
-.ganymede-orbit { inset: 12%; animation-duration: 18s; animation-delay: -11s; }
-.callisto-orbit { inset: 2%; animation-duration: 24s; animation-delay: -18s; }
+.io-orbit {
+  inset: 32%;
+  animation-duration: 8s;
+  animation-delay: -1s;
+}
+.europa-orbit {
+  inset: 22%;
+  animation-duration: 12s;
+  animation-delay: -5s;
+}
+.ganymede-orbit {
+  inset: 12%;
+  animation-duration: 18s;
+  animation-delay: -11s;
+}
+.callisto-orbit {
+  inset: 2%;
+  animation-duration: 24s;
+  animation-delay: -18s;
+}
 
 .orbit-moon {
   position: absolute;
@@ -906,98 +1076,363 @@ button:focus-visible {
   border: 1px solid #ffffffa0;
 }
 
-.io-orbit .orbit-moon, .io-key { background-color: #f1c95f; }
-.europa-orbit .orbit-moon, .europa-key { background-color: #dceafb; }
-.ganymede-orbit .orbit-moon, .ganymede-key { background-color: #c6946c; }
-.callisto-orbit .orbit-moon, .callisto-key { background-color: #a3a9b2; }
-#jupiter-orbit-model.orbits-running .jupiter-orbit { animation-play-state: running; }
-
-@keyframes jupiter-orbit-turn {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(-360deg); }
+.io-orbit .orbit-moon,
+.io-key {
+  background-color: #f1c95f;
+}
+.europa-orbit .orbit-moon,
+.europa-key {
+  background-color: #dceafb;
+}
+.ganymede-orbit .orbit-moon,
+.ganymede-key {
+  background-color: #c6946c;
+}
+.callisto-orbit .orbit-moon,
+.callisto-key {
+  background-color: #a3a9b2;
+}
+#jupiter-orbit-model.orbits-running .jupiter-orbit {
+  animation-play-state: running;
 }
 
-.jupiter-moon-legend { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px 20px; list-style: none; padding: 0; }
-.jupiter-moon-legend li { display: flex; align-items: center; gap: 8px; }
-.moon-key { width: 12px; height: 12px; border-radius: 50%; flex-shrink: 0; }
-.jupiter-orbit-controls { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 24px; }
-#jupiter-orbit-status { font-weight: bold; }
+@keyframes jupiter-orbit-turn {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.jupiter-moon-legend {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px 20px;
+  list-style: none;
+  padding: 0;
+}
+.jupiter-moon-legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.moon-key {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.jupiter-orbit-controls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 24px;
+}
+#jupiter-orbit-status {
+  font-weight: bold;
+}
 
 /* Saturn theme: pale gold accents with warm olive-brown backgrounds. */
-.saturn-page { color: #faf3df; background: linear-gradient(135deg, #252318, #49422a); }
-.saturn-page .site-header { background-color: #201e15; border-bottom-color: #9e9164; }
-.saturn-page nav a { color: #faf3df; }
+.saturn-page {
+  color: #faf3df;
+  background: linear-gradient(135deg, #252318, #49422a);
+}
+.saturn-page .site-header {
+  background-color: #201e15;
+  border-bottom-color: #9e9164;
+}
+.saturn-page nav a {
+  color: #faf3df;
+}
 .saturn-page nav a:hover,
-.saturn-page nav a[aria-current="page"] { color: #252318; background-color: #e8d59a; }
-.saturn-page h1 { color: #f9e8b6; text-shadow: 0 0 24px #98824a; }
-.saturn-page h2 { color: #ead7a1; }
-.saturn-page .panel { background-color: #302d1f; border-color: #9e9164; }
+.saturn-page nav a[aria-current="page"] {
+  color: #252318;
+  background-color: #e8d59a;
+}
+.saturn-page h1 {
+  color: #f9e8b6;
+  text-shadow: 0 0 24px #98824a;
+}
+.saturn-page h2 {
+  color: #ead7a1;
+}
+.saturn-page .panel {
+  background-color: #302d1f;
+  border-color: #9e9164;
+}
 
 /* Keep square image frames without cropping the rings out of photographs. */
-.saturn-page .image-grid img { background-color: #15150f; }
-.saturn-page button { color: #252318; background-color: #e8d59a; }
-.saturn-page button:hover { background-color: #fff0bf; }
+.saturn-page .image-grid img {
+  background-color: #15150f;
+}
+.saturn-page button {
+  color: #252318;
+  background-color: #e8d59a;
+}
+.saturn-page button:hover {
+  background-color: #fff0bf;
+}
 .saturn-page a:focus-visible,
 .saturn-page button:focus-visible,
-.saturn-page input:focus-visible { outline: 3px solid #ffffff; outline-offset: 4px; }
+.saturn-page input:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
 
 /* The model and controls wrap into a single column on narrow screens. */
-.saturn-explorer-layout { display: flex; flex-wrap: wrap; align-items: center; gap: 28px; margin: 28px 0; }
-.saturn-ring-model { position: relative; flex: 1 1 280px; max-width: 380px; aspect-ratio: 1 / 1; margin: 0 auto; background-color: #15150f; border-radius: 50%; }
-.saturn-ring { position: absolute; border-radius: 50%; }
-.ring-a { inset: 3%; border: 16px solid #baac78; }
-.ring-b { inset: 15%; border: 22px solid #efdfa9; }
-.ring-c { inset: 29%; border: 10px solid #706a51; }
-.saturn-model-planet { position: absolute; inset: 40%; border-radius: 50%; background: linear-gradient(160deg, #f7e4ae, #af965a); box-shadow: inset -8px -4px 12px #00000050; }
+.saturn-explorer-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 28px;
+  margin: 28px 0;
+}
+.saturn-ring-model {
+  position: relative;
+  flex: 1 1 280px;
+  max-width: 380px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  background-color: #15150f;
+  border-radius: 50%;
+}
+.saturn-ring {
+  position: absolute;
+  border-radius: 50%;
+}
+.ring-a {
+  inset: 3%;
+  border: 16px solid #baac78;
+}
+.ring-b {
+  inset: 15%;
+  border: 22px solid #efdfa9;
+}
+.ring-c {
+  inset: 29%;
+  border: 10px solid #706a51;
+}
+.saturn-model-planet {
+  position: absolute;
+  inset: 40%;
+  border-radius: 50%;
+  background: linear-gradient(160deg, #f7e4ae, #af965a);
+  box-shadow: inset -8px -4px 12px #00000050;
+}
 
-.saturn-ring-controls { flex: 1 1 280px; min-width: 0; }
-.saturn-ring-controls fieldset { min-width: 0; margin: 0; padding: 16px; border: 1px solid #9e9164; border-radius: 10px; }
-.saturn-ring-controls legend { padding: 0 8px; font-weight: bold; }
-.saturn-ring-option { display: flex; align-items: flex-start; gap: 12px; padding: 12px 0; cursor: pointer; }
-.saturn-ring-option input { width: 20px; height: 20px; margin: 3px 0 0; flex-shrink: 0; accent-color: #e8d59a; }
-.saturn-ring-option strong { display: block; color: #f9e8b6; }
-.saturn-ring-option small { display: block; color: #d9ceb0; }
-.saturn-ring-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
-#saturn-ring-status { color: #faf3df; }
+.saturn-ring-controls {
+  flex: 1 1 280px;
+  min-width: 0;
+}
+.saturn-ring-controls fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 16px;
+  border: 1px solid #9e9164;
+  border-radius: 10px;
+}
+.saturn-ring-controls legend {
+  padding: 0 8px;
+  font-weight: bold;
+}
+.saturn-ring-option {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px 0;
+  cursor: pointer;
+}
+.saturn-ring-option input {
+  width: 20px;
+  height: 20px;
+  margin: 3px 0 0;
+  flex-shrink: 0;
+  accent-color: #e8d59a;
+}
+.saturn-ring-option strong {
+  display: block;
+  color: #f9e8b6;
+}
+.saturn-ring-option small {
+  display: block;
+  color: #d9ceb0;
+}
+.saturn-ring-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+#saturn-ring-status {
+  color: #faf3df;
+}
 
 /* Uranus theme: deep teal backgrounds and icy blue accents. */
-.uranus-page { color: #e9fcff; background: linear-gradient(135deg, #102c35, #244953); }
-.uranus-page .site-header { background-color: #102c35; border-bottom-color: #6799a4; }
-.uranus-page nav a { color: #e9fcff; }
+.uranus-page {
+  color: #e9fcff;
+  background: linear-gradient(135deg, #102c35, #244953);
+}
+.uranus-page .site-header {
+  background-color: #102c35;
+  border-bottom-color: #6799a4;
+}
+.uranus-page nav a {
+  color: #e9fcff;
+}
 .uranus-page nav a:hover,
-.uranus-page nav a[aria-current="page"] { color: #102c35; background-color: #b6e8ee; }
-.uranus-page h1 { color: #d1f6ff; text-shadow: 0 0 24px #518a98; }
-.uranus-page h2 { color: #b6e8ee; }
-.uranus-page .panel { background-color: #183943; border-color: #6799a4; }
-.uranus-page .image-grid img { background-color: #0b2128; }
-.uranus-page button { color: #102c35; background-color: #b6e8ee; }
-.uranus-page button:hover { background-color: #d9f9ff; }
-.uranus-page button:disabled { opacity: 0.5; cursor: default; }
+.uranus-page nav a[aria-current="page"] {
+  color: #102c35;
+  background-color: #b6e8ee;
+}
+.uranus-page h1 {
+  color: #d1f6ff;
+  text-shadow: 0 0 24px #518a98;
+}
+.uranus-page h2 {
+  color: #b6e8ee;
+}
+.uranus-page .panel {
+  background-color: #183943;
+  border-color: #6799a4;
+}
+.uranus-page .image-grid img {
+  background-color: #0b2128;
+}
+.uranus-page button {
+  color: #102c35;
+  background-color: #b6e8ee;
+}
+.uranus-page button:hover {
+  background-color: #d9f9ff;
+}
+.uranus-page button:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
 .uranus-page a:focus-visible,
-.uranus-page button:focus-visible { outline: 3px solid #ffffff; outline-offset: 4px; }
+.uranus-page button:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+}
 
 /* Responsive diagram and controls sit side by side when space allows. */
-.uranus-tilt-layout { display: flex; flex-wrap: wrap; align-items: center; gap: 28px; margin: 28px 0; }
-.uranus-tilt-stage { position: relative; flex: 1 1 280px; max-width: 350px; aspect-ratio: 1 / 1; margin: 0 auto; overflow: hidden; background-color: #0b2128; border-radius: 12px; }
+.uranus-tilt-layout {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 28px;
+  margin: 28px 0;
+}
+.uranus-tilt-stage {
+  position: relative;
+  flex: 1 1 280px;
+  max-width: 350px;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #0b2128;
+  border-radius: 12px;
+}
 
 /* Fixed references make the changing axis angle easy to compare. */
-.uranus-upright-reference { position: absolute; left: 50%; top: 8%; bottom: 8%; border-left: 2px dashed #86a9b1; }
-.uranus-orbit-reference { position: absolute; top: 50%; left: 6%; right: 6%; border-top: 1px solid #86a9b1; }
-.uranus-orbit-label { position: absolute; bottom: 10px; width: 100%; text-align: center; font-size: 0.85rem; color: #bddde3; }
+.uranus-upright-reference {
+  position: absolute;
+  left: 50%;
+  top: 8%;
+  bottom: 8%;
+  border-left: 2px dashed #86a9b1;
+}
+.uranus-orbit-reference {
+  position: absolute;
+  top: 50%;
+  left: 6%;
+  right: 6%;
+  border-top: 1px solid #86a9b1;
+}
+.uranus-orbit-label {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  font-size: 0.85rem;
+  color: #bddde3;
+}
 
 /* JavaScript rotates the globe, equator, and axis together around the center. */
-#uranus-tilting-model { position: absolute; inset: 15%; transform: rotate(98deg); }
-.uranus-model-globe { position: absolute; inset: 19%; border-radius: 50%; background: linear-gradient(100deg, #caf4f4, #7bc6d1 60%, #356c7b); }
-.uranus-model-equator { position: absolute; top: 50%; left: 19%; right: 19%; border-top: 2px solid #397e8c; }
-.uranus-model-axis { position: absolute; left: 50%; top: 0; bottom: 0; width: 3px; background-color: #ffffff; transform: translateX(-50%); }
-.uranus-model-axis::before { content: ""; position: absolute; top: -1px; left: -5px; width: 0; height: 0; border-left: 6px solid transparent; border-right: 6px solid transparent; border-bottom: 12px solid #ffffff; }
+#uranus-tilting-model {
+  position: absolute;
+  inset: 15%;
+  transform: rotate(98deg);
+}
+.uranus-model-globe {
+  position: absolute;
+  inset: 19%;
+  border-radius: 50%;
+  background: linear-gradient(100deg, #caf4f4, #7bc6d1 60%, #356c7b);
+}
+.uranus-model-equator {
+  position: absolute;
+  top: 50%;
+  left: 19%;
+  right: 19%;
+  border-top: 2px solid #397e8c;
+}
+.uranus-model-axis {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: #ffffff;
+  transform: translateX(-50%);
+}
+.uranus-model-axis::before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  left: -5px;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 12px solid #ffffff;
+}
 
-.uranus-tilt-controls { flex: 1 1 260px; min-width: 0; }
-.uranus-angle-display { padding: 20px; background-color: #0b2128; border-radius: 10px; }
-.uranus-angle-label { margin: 0; color: #bddde3; letter-spacing: 0.12em; font-size: 0.8rem; font-weight: bold; }
-#uranus-angle { margin: 8px 0; color: #d1f6ff; font-size: 2.8rem; font-weight: bold; line-height: 1.2; }
-#uranus-tilt-description { margin-bottom: 0; }
-.uranus-tilt-buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 14px; }
+.uranus-tilt-controls {
+  flex: 1 1 260px;
+  min-width: 0;
+}
+.uranus-angle-display {
+  padding: 20px;
+  background-color: #0b2128;
+  border-radius: 10px;
+}
+.uranus-angle-label {
+  margin: 0;
+  color: #bddde3;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+#uranus-angle {
+  margin: 8px 0;
+  color: #d1f6ff;
+  font-size: 2.8rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+#uranus-tilt-description {
+  margin-bottom: 0;
+}
+.uranus-tilt-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 14px;
+}
 
 /* Subject-page spacing: title-only headers, with the homepage excluded. */
 body:not(.home-page) .hero {

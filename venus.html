@@ -1,13 +1,14 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Solar System Project | Venus</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- Connect the thermometer controls after their HTML elements have been parsed. -->
     <script src="javascript/venus.js" defer></script>
   </head>
+
   <body class="venus-page">
     <header class="site-header">
       <!-- Shared navigation; aria-current identifies this page. -->
@@ -24,6 +25,7 @@
         <a href="uranus.html">Uranus</a>
       </nav>
     </header>
+    
     <main>
       <section class="hero">
         <h1>Venus</h1>
@@ -34,10 +36,16 @@
         <!-- Keep both content images visible independently of the thermometer. -->
         <div class="image-grid">
           <figure>
-            <img src="images/venus1.jpg" alt="Venus covered in pale clouds against a black background">
+            <img
+              src="images/venus1.jpg"
+              alt="Venus covered in pale clouds against a black background"
+            />
           </figure>
           <figure>
-            <img src="images/venus2.png" alt="Blue and tan view of Venus against a black background">
+            <img
+              src="images/venus2.png"
+              alt="Blue and tan view of Venus against a black background"
+            />
           </figure>
         </div>
       </section>
@@ -47,7 +55,10 @@
         <ul class="facts-list">
           <li>Venus is the second planet from the Sun.</li>
           <li>Venus is the hottest planet in our solar system.</li>
-          <li>Its thick atmosphere is made mostly of carbon dioxide, which traps heat through a powerful greenhouse effect.</li>
+          <li>
+            Its thick atmosphere is made mostly of carbon dioxide, which traps
+            heat through a powerful greenhouse effect.
+          </li>
           <li>Venus rotates in the opposite direction to most planets.</li>
           <li>Venus has no natural moons.</li>
         </ul>
@@ -57,7 +68,8 @@
         <h2>Turn Up the Heat</h2>
         <p>
           How hot is the hottest planet? Move the slider from familiar Earth
-          temperatures toward Venus's average surface temperature of about 867°F (464°C).
+          temperatures toward Venus's average surface temperature of about 867°F
+          (464°C).
         </p>
 
         <div class="venus-heat-layout">
@@ -71,14 +83,25 @@
             <p id="heat-reading">86°F</p>
             <p id="heat-celsius">30°C</p>
             <label for="heat-slider">Temperature in Fahrenheit</label>
-            <input type="range" id="heat-slider" min="32" max="1000" step="1" value="86"
-              aria-describedby="heat-explanation">
+            <input
+              type="range"
+              id="heat-slider"
+              min="32"
+              max="1000"
+              step="1"
+              value="86"
+              aria-describedby="heat-explanation"
+            />
             <div class="heat-presets" aria-label="Temperature examples">
               <button type="button" id="warm-day">Warm day · 86°F</button>
-              <button type="button" id="boiling-water">Boiling water · 212°F</button>
+              <button type="button" id="boiling-water">
+                Boiling water · 212°F
+              </button>
               <button type="button" id="venus-heat">Venus · 867°F</button>
             </div>
-            <p id="heat-explanation">86°F is an example of a warm day on Earth.</p>
+            <p id="heat-explanation">
+              86°F is an example of a warm day on Earth.
+            </p>
           </div>
         </div>
       </section>
