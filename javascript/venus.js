@@ -16,8 +16,7 @@ function updateHeat() {
   const fraction = (fahrenheit - Number(heatSlider.min)) /
     (Number(heatSlider.max) - Number(heatSlider.min));
   heatFill.style.height = (fraction * 100) + "%";
-  // HSL specifies hue, saturation, and lightness. As fraction rises from
-  // 0 to 1, hue falls from 45 toward 5, shifting the fill from yellow toward red.
+  // Changes color depending on temperature slider
   heatFill.style.backgroundColor = "hsl(" + (45 - fraction * 40) + ", 90%, 60%)";
   heatReading.textContent = fahrenheit + "°F";
   heatCelsius.textContent = celsius + "°C";
